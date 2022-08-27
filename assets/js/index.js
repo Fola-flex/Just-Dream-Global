@@ -24,7 +24,7 @@ var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options
   cellAlign: 'center',
-  autoPlay: 1500,
+  autoPlay: 6000,
   wrapAround: true
 });
 
@@ -32,7 +32,7 @@ var flkty = new Flickity( elem, {
 //   for an individual element
 var flkty = new Flickity( '.testimonial-carousel', {
   // options
-  autoPlay: 2000,
+  autoPlay: 4000,
   wrapAround: true,
   prevNextButtons: false
 });

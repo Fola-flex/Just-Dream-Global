@@ -6,10 +6,11 @@
 
 .faqs {
     width: 80%;
+    max-width: 800px;
     cursor: pointer;
     margin: auto;
     margin-bottom: 2rem;
-    padding: 60px 0;
+    padding: 50px 0;
     box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
     border-radius: 16px;
 }
@@ -154,7 +155,7 @@
 
     .faqs {
         width: 95%;
-        padding: 25px 0px;
+        padding: 40px 0px;
         margin-bottom: 2rem;
     }
 

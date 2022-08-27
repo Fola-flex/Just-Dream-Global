@@ -7,6 +7,7 @@
     --head-color: #0A1023;
     --head-alt-color: #055C2D;
     --hover-color: #1A4DBE;
+    --background-color: #007aff12;
 }
 
 * {
@@ -171,6 +172,8 @@ ul.sidenav {
 
 .carousel-section {
     width: 100%;
+    background: #007aff12;
+    padding: 20px 0px;
 }
 
 .main-carousel {
@@ -254,7 +257,7 @@ ul.sidenav {
 }
 
 .main-banner-content .banner-btn {
-    margin-top: 45px;
+    margin-top: 30px;
     margin-right: 40px;
     padding: 20px 30px;
     background-color: var(--hover-color);
@@ -395,18 +398,24 @@ ul.sidenav {
 
 .card-row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
+    margin: auto;
     margin-top: 60px;
     padding-top: 60px;
     background-color: white;
     gap: 20px;
 }
 
+.card-row h1 {
+    text-align: center;
+    margin-top: 20%;
+}
+
 .loan-card {
-    width: 400px;
+    width: 350px;
     max-width: 90%;
 }
 
@@ -458,10 +467,15 @@ ul.sidenav {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+}
+
+.loan-section .single-box .content i {
+    padding-left: 10px;
 }
 
 .credit-area {
-    background-color: var(--body-color);
+    background-color: var(--background-color);
     color: black;
 }
 
@@ -475,7 +489,7 @@ ul.sidenav {
     flex-direction: column;
     align-items: flex-start;
     width: 800px;
-    max-width: 100%;
+    max-width: 90%;
     padding-top: 80px;
     padding-bottom: 20px;
     text-align: center;
@@ -501,7 +515,7 @@ ul.sidenav {
     margin: 20px 0px;
 }
 
-.credit-title p:first-child {
+.loan-text p:first-child {
     color: var(--head-alt-color);
     font-weight: 600;
 }
@@ -558,7 +572,7 @@ ul.sidenav {
 .create-account .title h1, .testimonials h1 {
     font-size: 36px;
     color: black;
-    margin-bottom: 30px;
+    margin: 0px 20px 0px;
 }
 
 .create-account  .account-buttons {
@@ -569,17 +583,65 @@ ul.sidenav {
     justify-content: center;
 }
 
+.loans {
+    margin-top: 10%;
+}
+
+.loans .loan-text {
+    text-align: center;
+    padding: 10px;
+}
+
+.loans .card-row h1 {
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+.loans .loan-btn {
+    margin-top: 30px;
+    margin-right: 40px;
+    padding: 20px 30px;
+    background-color: var(--hover-color);
+    color: var(--body-color);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+.loan-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.loans .loan-card-container {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.loans .loan-card {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
 .loans .single-box {
-    padding: 50px 30px;
+    padding: 30px 20px;
     background: var(--body-color);
     box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
     border-radius: 20px;
     text-align: center;
 }
 
+.loans .single-box:hover {
+    border: 1px solid var(--hover-color);
+}
+
 .loans .single-box .thumb {
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
     background: #F5FAFF;
     border-radius: 70px;
     margin: 0;
@@ -599,17 +661,25 @@ ul.sidenav {
 }
 
 .loans .single-box .content div {
+    line-height: 30px;
     display: flex;
     align-items: baseline;
 }
+
 .loans .single-box .content h5 {
     margin-bottom: 20px;
     color: var(--head-color);
+    font-size: 30px;
 }
 
 .loans .single-box .content i {
-    margin-right: 20px;
+    margin-right: 10px;
     color: var(--head-alt-color);
+}
+
+.solutions {
+    background: var(--background-color);
+    margin-top: 10%;
 }
 
 .clients-item {
@@ -679,7 +749,7 @@ ul.sidenav {
 }
 
 .articles-area {
-    background-color: var(--body-color);
+    background-color: var(--background-color);
     color: black;
     margin-top: 50px;
 }
@@ -687,6 +757,12 @@ ul.sidenav {
 .articles-container, .faq-title {
     text-align: center;
     margin: auto;
+    margin-bottom: 40px;
+}
+
+.faq-title a {
+    color: #1A4DBE;
+    text-decoration: none;
 }
 
 .articles-title p:first-child, .faq-title p:first-child {
@@ -1089,6 +1165,46 @@ footer .container .row .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #ffffff;
 }
+
+@media (min-width: 1280px) {
+    .loans .card-row h1 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: start;
+    }
+
+    .loans .loan-text {
+        text-align: start;
+    }
+
+    .loans .card-row {
+        align-items: baseline;
+        width: 80%;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .loans .loan-card-container {
+        display: block;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 60%;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-banner-content {
+        margin-left: 15%;
+    }
+
+    .loan-section .card-row {
+        width: 80%;
+        flex-wrap: nowrap;
+    }
+}
   
   /*responsive*/
 @media(max-width: 768px) {
@@ -1174,8 +1290,16 @@ footer .container .row .footer-col .social-links a:hover{
 }
   
 @media(max-width: 460px){
+    .about-btn a {
+        padding: 8px 20px;
+    }
+
     .loan-section .single-box {
         padding: 50px 20px;
+    }
+
+    .loan-section > p {
+        width: 95%;
     }
 
     .footer {
