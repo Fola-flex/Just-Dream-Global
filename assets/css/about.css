@@ -1,5 +1,164 @@
+:root {
+    --body-font: 'Jost', sans-serif;
+    --body-color: #ffffff;
+    --para-color: #2C3655;
+    --head-color: #0A1023;
+    --head-alt-color: #055C2D;
+    --hover-color: #1A4DBE;
+    --background-color: #007aff12;
+}
+
+.about-header {
+    background-color: #007aff12;
+}
+
 .about-banner {
     width: 80%;
     margin: auto;
-    padding: 60px 0px;
+    padding: 100px 0px;
+}
+
+.about-banner h1, .about-title h1 {
+    font-size: 42px;
+}
+
+.lending-area {
+    margin: 60px 0px;
+}
+
+.about-content {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about-content > div {
+    width: 50%;
+}
+
+.about-text {
+    margin-top: 30px;
+}
+
+.about-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-cards .card {
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    height: 100%;
+    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+    border-radius: 10px;
+}
+
+.about-cards .card h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-cards .card span {
+    font-size: 26px;
+    color: var(--hover-color);
+}
+
+.values {
+    background-color: var(--background-color);
+    padding: 60px 10px;
+    margin: 60px 0px;
+}
+
+.values .value-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-title {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.value-title p:first-child {
+    color: var(--head-alt-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.value-title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.value-cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.value-cards .card-wrapper {
+    text-align: center;
+    width: 250px;
+    height: 100%;
+}
+
+.value-cards .card-wrapper .thumb {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    background-color: #1A4DBE;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-cards .card-wrapper .thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.value-cards .card-wrapper h3 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-content > div {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .value-title {
+        width: 80%;
+    }
+}
+
+@media (max-width: 460px) {
+    .about-content > div {
+        width: 100%;
+    }
+
+    .value-title {
+        width: 100%;
+    }
 }
