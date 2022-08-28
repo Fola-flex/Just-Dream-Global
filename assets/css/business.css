@@ -1,0 +1,177 @@
+.business-header {
+    background-color: #007aff12;
+}
+
+.business-banner {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.business-banner h1   {
+    font-size: 42px;
+}
+
+.business-banner > div {
+    display: flex;
+    align-items: center;
+}
+
+.business-banner > div i {
+    padding: 0px 8px;
+    color: var(--hover-color);
+}
+
+.business-loans {
+    margin: 6% 0;
+    padding: 50px 10px;
+}
+
+.business-card {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.business-card > div:first-child {
+    margin-bottom: 20px;
+}
+
+.business-loan-text {
+    margin: 0px 0px 40px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.business-loan-text p:first-child {
+    color: var(--head-alt-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.business-loan-text h1 {
+    font-size: 42px;
+}
+
+.business-loan-btn {
+    margin-top: 30px;
+    margin-right: 40px;
+    padding: 20px 30px;
+    background-color: var(--hover-color);
+    color: var(--body-color);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+
+.business-loan-btn a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.objectives  div {
+    display: flex;
+    align-items: center;
+}
+.objectives p {
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--para-color);
+    line-height: 30px;
+}
+
+.objectives a {
+    color: var(--hover-color);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.objectives i {
+    padding-right: 10px;
+    color: var(--head-alt-color);
+    font-size: 20px;
+}
+
+.values {
+    background-color: var(--background-color);
+    padding: 60px 10px;
+    margin: 60px 0px;
+}
+
+.values .value-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.value-title p:first-child {
+    color: var(--head-alt-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.value-title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.value-cards {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.value-cards .card-wrapper {
+    width: 220px;
+    height: 100%;
+}
+
+.value-cards .card-wrapper h3 {
+    font-size: 24px;
+}
+
+.value-cards .card-wrapper .thumb {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    background-color:  var(--background-color);
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-cards .card-wrapper .thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+.value-cards .card-wrapper h3 {
+    margin-bottom: 10px;
+}
+
+.personal {
+    text-align: center;
+}
+
+.card-wrapper.personal .thumb {
+    margin: auto;
+    margin-bottom: 30px;
+}

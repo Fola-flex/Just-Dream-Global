@@ -561,6 +561,8 @@ ul.sidenav {
 .loans .loan-text {
     text-align: center;
     padding: 10px;
+    width: 500px;
+    max-width: 100%;
 }
 
 .loans .card-row h1 {
@@ -756,6 +758,7 @@ ul.sidenav {
 
 .register .create-account .title  p {
     color: #FFFFFF;
+    padding: 0 10px;
 }
 
 .register .create-account .title h1 {
@@ -771,260 +774,7 @@ ul.sidenav {
     background: none;
 }
 
-.company-content .company-text {
-    position: relative;
-    padding-left: 70px;
-    margin-bottom: 20px;
-}
 
-.company-content .company-text .icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-
-.ptb-100 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.section-title-investment {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.deserve-item h3 {
-    font-size: 36px;
-    margin-bottom: 0;
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.deserve-item .deserve-content {
-    position: relative;
-    padding-left: 65px;
-    margin-top: 30px;
-}
-
-.deserve-item .deserve-content::before {
-    width: 1px;
-    height: 140%;
-    background-color: var(--hover-color);
-    content: '';
-    z-index: -1;
-    position: absolute;
-    left: 20px;
-    top: 0;
-}
-
-.deserve-item .deserve-content span {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    background-color: #f9fafb;
-    border: 1px solid #1A4DBE;
-    text-align: center;
-    font-size: 24px;
-    color: var(--hover-color);
-    border-radius: 50px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bolder;
-}
-
-.deserve-item .deserve-content h4 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.rate-form {
-    padding: 50px 45px;
-    background-color: #1A4DBE;
-}
-
-.rate-form .rate-content {
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-.rate-form .rate-content h3 {
-    font-size: 36px;
-    color: #fff;
-    margin-top: 10px;
-}
-
-.rate-form .form-group {
-    margin-bottom: 15px;
-}
-
-.rate-form label {
-    color: #fff;
-    font-family: rubik,sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.rate-form .form-group .form-control {
-    background-color: #fff;
-    border: none;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
-    height: 50px;
-    border-radius: 0;
-    color: #606060;
-    width: 100%;
-    font-size: 16px;
-}
-
-.rate-form .form-group .nice-select {
-    float: unset;
-    line-height: 52px;
-    color: #606060;
-    text-transform: capitalize;
-    font-weight: 400;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.rate-form .form-group .form-control {
-    background-color: #fff;
-    border: none;
-    -webkit-box-shadow: unset;
-    box-shadow: unset;
-    height: 50px;
-    border-radius: 0;
-    color: #606060;
-    width: 100%;
-    font-size: 16px;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-
-.rate-form .form-group .nice-select .list {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 29px 0 rgb(102 102 102 / 10%);
-    box-shadow: 0 0 29px 0 rgb(102 102 102 / 10%);
-    border-radius: 0;
-    margin-top: -1px;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.rate-form .form-group .nice-select .list .option.selected {
-    background-color: transparent;
-    font-weight: 500;
-}
-
-.rate-form .form-group .nice-select .list .option:hover {
-    background-color: #1A4DBE !important;
-    color: #fff;
-}
-.rate-form .form-group .nice-select .list .option {
-    -webkit-transition: .6s;
-    transition: .6s;
-    color: #606060;
-    font-size: 14px;
-    line-height: 25px;
-    padding: 10px 20px
-}
-
-.rate-form .form-group .nice-select:after {
-    right: 20px;
-    border-bottom: 2px solid #111;
-    border-right: 2px solid #111;
-}
-
-.rate-form .rate-btn {
-    margin-top: 20px;
-}
-
-.rate-form .rate-btn .default-btn {
-    background-color: #fff;
-    color: var(--head-color);
-    width: 100%;
-    padding: 15px 30px;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-}
-
-.package-img {
-    height: 7rem;
-    width: 7rem;
-}
-
-.custom-price .pricing-table .block-heading {
-    padding-top: 50px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.custom-price .pricing-table .item {
-    background-color: #ffffff;
-    box-shadow: 0px 2px 10px rgb(0 0 0 / 8%);
-    border-top: 2px solid #1A4DBE;
-    padding: 30px;
-    overflow: hidden;
-    position: relative;
-}
-
-.custom-price .pricing-table .heading {
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.package-img {
-    height: 7rem;
-    width: 7rem;
-}
-
-.custom-price .pricing-table .features h4 {
-    text-align: center;
-    font-size: 18px;
-    padding: 5px;
-}
-
-.custom-price .default-btn {
-    border: none;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    overflow: hidden;
-    z-index: 1;
-    background-color: #1A4DBE;
-    color: #fff;
-    -webkit-transition: .5s;
-    transition: .5s;
-    border-radius: 5px;
-    opacity: 1;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 12px 45px;
-}
 
 .footer{
     background-color: var(--background-color);
@@ -1052,7 +802,7 @@ footer .container .row .footer-col{
 footer .container .row .last{
     width: 100%;
     margin-top: 70px;
-    border-top: 2px solid var(--hover-color);
+    border-top: 1px solid var(--hover-color);
     text-align: center;
 }
  
