@@ -5,7 +5,7 @@
 .business-banner {
     width: 80%;
     margin: auto;
-    padding: 100px 0px;
+    padding: 100px 20px;
 }
 
 .business-banner h1   {
@@ -24,24 +24,36 @@
 
 .business-loans {
     margin: 6% 0;
-    padding: 50px 10px;
+    padding: 50px 20px;
 }
 
 .business-card {
-    width: 80%;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    
+}
+
+.business-image {
+    width: 100%;
+}
+
+.business-image img {
+    width: 100%;
 }
 
 .business-card > div:first-child {
     margin-bottom: 20px;
 }
 
+.business-text-wrapper {
+    width: 100%;
+}
+
 .business-loan-text {
     margin: 0px 0px 40px;
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .business-loan-text p:first-child {
@@ -104,6 +116,10 @@
     margin: 60px 0px;
 }
 
+.loan-calculator-area .value-wrapper {
+    padding: 0 10px;
+}
+
 .values .value-wrapper {
     margin: auto;
     display: flex;
@@ -113,7 +129,8 @@
 }
 
 .value-title {
-    width: 60%;
+    width: 100%;
+    max-width: 500px;
     text-align: center;
     margin: auto;
 }
@@ -174,4 +191,27 @@
 .card-wrapper.personal .thumb {
     margin: auto;
     margin-bottom: 30px;
+}
+
+.light {
+    background-color: var(--background-color);
+}
+
+@media screen and (max-width: 768px) {
+    .business-card {
+        justify-content: center;
+        align-self: center;
+    }
+
+    .business-image {
+        display: none;
+    }
+
+    
+}
+ 
+@media screen and (max-width: 460px) {
+    .business-banner {
+        width: 100%;
+    }
 }

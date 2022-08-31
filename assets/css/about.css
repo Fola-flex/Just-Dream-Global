@@ -18,6 +18,16 @@
     padding: 100px 0px;
 }
 
+.about-banner > div {
+    display: flex;
+    align-items: center;
+}
+
+.about-banner > div i {
+    padding: 0px 8px;
+    color: var(--hover-color);
+}
+
 .about-banner h1, .about-title h1 {
     font-size: 42px;
 }

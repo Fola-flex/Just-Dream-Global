@@ -1,310 +1,253 @@
-<section class="deserve-area ptb-100">
-    <div class="container">
-        <div class="section-title-investment">
-            <!-- <span>Funding circles</span> -->
-            <h2>Investment</h2>
-            <p>Create your account and become an investor in just a few steps.</p>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="deserve-item">
-                    <h3>How to invest?</h3>
-                    <div class="deserve-content">
-                        <span>1</span>
-                        <h4>Register</h4>
-                        <p>To register as an investor, please enter your personal information as required.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/investment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Just Dream Global</title>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div>
+                <img src="assets/images/just-dream-global.png">
+            </div>
+            <div class="nav-links">
+                <span id="bars">&#9776;</span>
+                <ul id="list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href=/about.html>About Us</a></li>
+                    <div class="dropdown">
+                        <li><a>Product</a><i class=""></i></li>
+                        <div class="dropdown-content">
+                            <ul>
+                                <div class="dropdown-two">
+                                    <li><a href="">Loans</a><i class=""></i></li>
+                                    <div class="sub-dropdown-content">
+                                        <ul>
+                                            <li><a href="/business_loan.html">Business Loans</a></li>
+                                            <li><a href="/personal_loan.html">Personal Loan</a></li>
+                                        </ul> 
+                                    </div> 
+                                </div>
+                                <li><a href="/invest.html">Investment</a></li>
+                                <li><a href="">Card</a></li>
+                                <li><a href="">Just-Credit</a></li>
+                            </ul>
+                          
+                        </div> 
                     </div>
-                    <div class="deserve-content">
-                        <span>2</span>
-                        <h4>Complete your account registration</h4>
-                        <p>Complete your account registration, by uploading all necessary document required.</p>
-                    </div>
-                    <div class="deserve-content">
-                        <span>3</span>
-                        <h4>Select an investment package</h4>
-                        <p>Select a package that suit your investing strength.</p>
-                    </div>
-                    <div class="deserve-content">
-                        <span>4</span>
-                        <h4>Start Earning</h4>
-                        <p>Watch your cash grow with your Roi deposited to your Just-Dream account at its due time.</p>
-                    </div>
-                    <div class="about-btn">
-                        <a href="./register" class="default-btn">
-                            Apply now
-                            <span></span>
-                        </a>
-                    </div>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href=#>Blog</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="invest-header">
+            <div class="invest-banner">
+                <h1>Investment</h1>
+                <div>
+                    <p>Home</p>
+                    <i class="fa fa-arrow-right-long"></i>
+                    <p>Products</p>
+                    <i class="fa fa-arrow-right-long"></i>
+                    <p>Investment</p>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="rate-form">
-                    <div class="rate-content">
-                        <h3>Investment Calculator</h3>
-                    </div>
-                    <form id="calc-form">
-                        <div class="form">
-                            <div class="form-group">
-                                <label>Select Investment Package</label>
-                                <div class="select-box">
-                                    <select class="form-control" id="inv-select" required="" style="display: none;">
-                                        <option value="">Select Package</option>
-                                        <option value="pL3udUZC" data-min="100000" data-max="500000" data-interest="1.58" data-period="360" data-from="6" data-to="12" data-type="flexible">1.58% in 6 to 12 months (Flexible)</option>
-                                        <option value="7WA2epnt" data-min="500000" data-max="1000000" data-interest="1.58" data-period="360" data-from="8" data-to="12" data-type="flexible">1.58% in 8 to 12 months (Flexible)</option>
-                                        <option value="gSb5Mrbo" data-min="100000" data-max="500000" data-interest="1.70" data-period="540" data-from="12" data-to="18" data-type="flexible">1.70% in 12 to 18 months (Flexible)</option>
-                                        <option value="uymqdWhW" data-min="500000" data-max="1000000" data-interest="1.90" data-period="720" data-from="18" data-to="24" data-type="flexible">1.90% in 18 to 24 months (Flexible)</option>
-                                        <option value="oeiMhoZv" data-min="50000" data-max="200000" data-interest="1.9" data-period="180" data-from="1" data-to="6" data-type="flexible">1.9% in 1 to 6 months (Flexible)</option>
-                                        <option value="h6kxRrBn" data-min="50000" data-max="20000" data-interest="1.9" data-period="180" data-from="1" data-to="6" data-type="flexible">1.9% in 1 to 6 months (Flexible)</option>
-                                    </select>
-                                    <div class="nice-select form-control" tabindex="0">
-                                        <span class="current">Select Package</span>
-                                        <ul class="list">
-                                            <li data-value="" class="option selected">Select Package</li>
-                                            <li data-value="pL3udUZC" class="option">1.58% in 6 to 12 months (Flexible)</li>
-                                            <li data-value="7WA2epnt" class="option">1.58% in 8 to 12 months (Flexible)</li>
-                                            <li data-value="gSb5Mrbo" class="option">1.70% in 12 to 18 months (Flexible)</li>
-                                            <li data-value="uymqdWhW" class="option">1.90% in 18 to 24 months (Flexible)</li>
-                                            <li data-value="oeiMhoZv" class="option">1.9% in 1 to 6 months (Flexible)</li>
-                                            <li data-value="h6kxRrBn" class="option">1.9% in 1 to 6 months (Flexible)</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group" id="flex-select-div" style="display: none;">
-                                <label>Select Period</label>
-                                <select id="flex-select" class="form-control" style="display: none;"></select>
-                                <div class="nice-select form-control" tabindex="0">
-                                    <span class="current"></span>
-                                    <ul class="list"></ul>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Amount to invest</label>
-                                <input type="number" class="form-control" placeholder="Amount ₦" id="ngn-amount" required="">
-                            </div>
-                            <div class="form-group">
-                                <label>Daily Profit</label>
-                                <input type="text" readonly="" class="form-control" id="calc-daily">
-                            </div>
-                            <div class="form-group">
-                                <label>Total Profit</label>
-                                <input type="text" readonly="" class="form-control" id="calc-total">
-                            </div>
-                            <div class="rate-btn">
-                                <button type="submit" id="calc-btn" class="default-btn about-btn">
-                                    Calculate
-                                    <span></span>
-                                </button>
-                            </div>
+        </section>
+        <section class="investment">
+            <div class="investment-wrapper">
+                <div class="investment-title">
+                    <h1>Invest with us</h1>
+                </div>
+                <div class="invest-cards">
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="" alt="checking">
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- Investment Packages -->
-        <div class="col-12 custom-price mt-5">
-             <section class="pricing-table">
-                 <div class="container">
-                     <div class="block-heading">
-                     </div>
-                     <div class="row">
-                                                      <div class="col-sm-12 col-md-6 col-lg-4 m-b-5 mb-5">
-                                 <div class="item">
-                                     <!-- <div class="ribbon">Best Value</div> -->
-                                     <div class="heading">
-                                         <img src="https://justdreamglobal.com/uploads/images/2021/06/image-1625000602-7bATkDL5XwYyMuZMw1jB.png" class="package-img">
-                                         <h3>platinum</h3>
-                                     </div>
-                                     <div class="features">
-                                         <h4>
-                                                                                      <span class="feature">Duration</span> : <span class="value">6 to 12 months</span>
-                                                                                  </h4>
-                                         <h4>
-                                             <span class="feature">Type</span> : <span class="value">Flexible</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Min Investment</span> : <span class="value">₦100,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Max Investment</span> : <span class="value">₦500,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Interest</span> : <span class="value">1.58%</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Bonus</span> : <span class="value">0.05%</span>
-                                         </h4>
-                                     </div>
-                                     <center><a href="https://justdreamglobal.com/login" class="btn btn-block default-btn">SELECT</a></center>
-                                 </div>
-                             </div>
-                                                          <div class="col-sm-12 col-md-6 col-lg-4 m-b-5 mb-5">
-                                 <div class="item">
-                                     <!-- <div class="ribbon">Best Value</div> -->
-                                     <div class="heading">
-                                         <img src="https://justdreamglobal.com/uploads/images/2021/06/image-1625001405-2r4Tgnrb4Lz8VEIvwG0U.png" class="package-img">
-                                         <h3>platinum</h3>
-                                     </div>
-                                     <div class="features">
-                                         <h4>
-                                                                                      <span class="feature">Duration</span> : <span class="value">8 to 12 months</span>
-                                                                                  </h4>
-                                         <h4>
-                                             <span class="feature">Type</span> : <span class="value">Flexible</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Min Investment</span> : <span class="value">₦500,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Max Investment</span> : <span class="value">₦1,000,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Interest</span> : <span class="value">1.58%</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Bonus</span> : <span class="value">0.10%</span>
-                                         </h4>
-                                     </div>
-                                     <center><a href="https://justdreamglobal.com/login" class="btn btn-block default-btn">SELECT</a></center>
-                                 </div>
-                             </div>
-                                                          <div class="col-sm-12 col-md-6 col-lg-4 m-b-5 mb-5">
-                                 <div class="item">
-                                     <!-- <div class="ribbon">Best Value</div> -->
-                                     <div class="heading">
-                                         <img src="https://justdreamglobal.com/uploads/images/2021/06/image-1625001796-Lyml4m0npdqUHlnyGwhD.png" class="package-img">
-                                         <h3>platinum</h3>
-                                     </div>
-                                     <div class="features">
-                                         <h4>
-                                                                                      <span class="feature">Duration</span> : <span class="value">12 to 18 months</span>
-                                                                                  </h4>
-                                         <h4>
-                                             <span class="feature">Type</span> : <span class="value">Flexible</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Min Investment</span> : <span class="value">₦100,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Max Investment</span> : <span class="value">₦500,000</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Interest</span> : <span class="value">1.70%</span>
-                                         </h4>
-                                         <h4>
-                                             <span class="feature">Bonus</span> : <span class="value">0.10%</span>
-                                         </h4>
-                                     </div>
-                                     <center><a href="https://justdreamglobal.com/login" class="btn btn-block default-btn">SELECT</a></center>
-                                 </div>
-                             </div>
-                                                  </div>
-
-                     <div class="mx-auto text-center">
-                        <a href="./investments" class="btn default-btn btn-block">More</a>
-                    </div>
-                 </div>
-             </section>
-        </div>
-    </div>
-</section>
-<section class="deserve-area ptb-100">
-    <div class="container">
-        <div class="section-title">
-            <!-- <span>Funding circles</span> -->
-            <h2>Loans</h2>
-            <p>It is a known truth that capital is the bloodline of every business why not spice up your business with creative, exquisite, and top-notch ideas that will change your business history for better by applying for our loan.</p>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="deserve-item">
-                    <h3>How do you apply for loan?</h3>
-                    <div class="deserve-content">
-                        <span>1</span>
-                        <h4>Visit the registration page</h4>
-                        <p>Click on the Apply Now to register.</p>
-                    </div>
-                    <div class="deserve-content">
-                        <span>2</span>
-                        <h4>Fill in your details and submit</h4>
-                        <p>Please enter your personal information as required and upload all necessary document.</p>
-                    </div>
-                    <div class="deserve-content">
-                        <span>3</span>
-                        <h4>Select a loan package</h4>
-                        <p>Select a desired loan package that suit your income flow.</p>
-                    </div>
-                    <div class="deserve-content">
-                        <span>4</span>
-                        <h4>Your loan request is received!</h4>
-                        <p>Your loan request is received and ready for approval.</p>
-                    </div>
-                    
-                    <div class="about-btn">
-                        <a href="./register" class="default-btn">
-                            Apply now
-                            <span></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="rate-form">
-                    <div class="rate-content">
-                        <h3>Loan Calculator</h3>
-                    </div>
-                    <form id="calc-loan-form">
-                        <div class="form">
-                            <div class="form-group">
-                                <label>Select Loan Package</label>
-                                <div class="select-box">
-                                    <select class="form-control" id="loan-select" required="" style="display: none;">
-                                        <option value="">Select Package</option>
-                                        <option value="s2VH7" data-amount="90000" data-interest="12.6" data-duration="70" data-savings="500.00" data-interval="7">₦90000, 12.6% for 70 Days (Personal)</option>
-                                        <option value="atklxt" data-amount="60000" data-interest="12.6" data-duration="70" data-savings="500.00" data-interval="7">₦60000, 12.6% for 70 Days (Personal)</option>
-                                        <option value="8E8NC4" data-amount="40000" data-interest="12.6" data-duration="70" data-savings="500.00" data-interval="7">₦40000, 12.6% for 70 Days (Personal)</option>
-                                        <option value="iRC3HqO" data-amount="60000" data-interest="27.72" data-duration="154" data-savings="500.00" data-interval="7">₦60000, 27.72% for 154 Days (Personal)</option>
-                                        <option value="XRy2uj" data-amount="50000" data-interest="17.64" data-duration="98" data-savings="500.00" data-interval="7">₦50000, 17.64% for 14 Weeks (Business)</option>
-                                        <option value="N20LjdL" data-amount="50000" data-interest="15.12" data-duration="84" data-savings="500.00" data-interval="7">₦50000, 15.12% for 12 Weeks (Business)</option>
-                                        <option value="bufTCW8" data-amount="50000" data-interest="15.12" data-duration="84" data-savings="500.00" data-interval="7">₦50000, 15.12% for 84 Days (Personal)</option>
-                                        <option value="qCs8wK" data-amount="70000" data-interest="15" data-duration="161" data-savings="500.00" data-interval="7">₦70000, 15% for 23 Weeks (Business)</option>
-                                        <option value="biFwerS" data-amount="1000000" data-interest="34" data-duration="240" data-savings="7000.00" data-interval="30">₦1000000, 34% for 8 Months (Contract)</option>
-                                        <option value="JbM3Hsd" data-amount="100000" data-interest="20" data-duration="120" data-savings="4000.00" data-interval="30">₦100000, 20% for 4 Months (Business)</option>
-                                        <option value="QSYCZ" data-amount="100000" data-interest="17" data-duration="112" data-savings="1000.00" data-interval="7">₦100000, 17% for 16 Weeks (Business)</option>
-                                        <option value="gW72yth" data-amount="80000" data-interest="20" data-duration="120" data-savings="2000.00" data-interval="30">₦80000, 20% for 4 Months (Business)</option>
-                                        <option value="l957h" data-amount="80000" data-interest="15" data-duration="84" data-savings="500.00" data-interval="7">₦80000, 15% for 12 Weeks (Business)</option>
-                                        <option value="WML7bz" data-amount="500000" data-interest="38.5" data-duration="360" data-savings="10000.00" data-interval="30">₦500000, 38.5% for 12 Months (Contract)</option>
-                                        <option value="lUXYQZ" data-amount="500000" data-interest="20" data-duration="180" data-savings="5000.00" data-interval="30">₦500000, 20% for 6 Months (Contract)</option>
-                                    </select>
-                                    <div class="nice-select form-control" tabindex="0"><span class="current">Select Package</span><ul class="list"><li data-value="" class="option selected">Select Package</li><li data-value="s2VH7" class="option">₦90000, 12.6% for 70 Days (Personal)</li><li data-value="atklxt" class="option">₦60000, 12.6% for 70 Days (Personal)</li><li data-value="8E8NC4" class="option">₦40000, 12.6% for 70 Days (Personal)</li><li data-value="iRC3HqO" class="option">₦60000, 27.72% for 154 Days (Personal)</li><li data-value="XRy2uj" class="option">₦50000, 17.64% for 14 Weeks (Business)</li><li data-value="N20LjdL" class="option">₦50000, 15.12% for 12 Weeks (Business)</li><li data-value="bufTCW8" class="option">₦50000, 15.12% for 84 Days (Personal)</li><li data-value="qCs8wK" class="option">₦70000, 15% for 23 Weeks (Business)</li><li data-value="biFwerS" class="option">₦1000000, 34% for 8 Months (Contract)</li><li data-value="JbM3Hsd" class="option">₦100000, 20% for 4 Months (Business)</li><li data-value="QSYCZ" class="option">₦100000, 17% for 16 Weeks (Business)</li><li data-value="gW72yth" class="option">₦80000, 20% for 4 Months (Business)</li><li data-value="l957h" class="option">₦80000, 15% for 12 Weeks (Business)</li><li data-value="WML7bz" class="option">₦500000, 38.5% for 12 Months (Contract)</li><li data-value="lUXYQZ" class="option">₦500000, 20% for 6 Months (Contract)</li></ul></div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Savings</label>
-                                <input type="text" readonly="" class="form-control" id="calc-savings">
-                            </div>
-                            <div class="form-group">
-                                <label>Interval Payback + Savings</label>
-                                <input type="text" readonly="" class="form-control" id="calc-int-pay">
-                            </div>
-                            <div class="form-group">
-                                <label>Total Payback</label>
-                                <input type="text" readonly="" class="form-control" id="calc-total-pay">
-                            </div>
-                            <div class="rate-btn">
-                                <button type="submit" id="calc-loan-btn" class="default-btn">
-                                    Calculate
-                                    <span style="top: -35.6719px; left: 167.5px;"></span>
-                                </button>
-                            </div>
+                        <div  class="card-content">
+                            <h3>Help-lend and earn while you sleep  </h3>
+                            <p>We cannot do it alone be part of our Help-Lend initiative together we can make dreams come through.</p>
                         </div>
-                    </form>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="" alt="checking">
+                        </div>
+                        <div class="card-content">
+                            <h3>Let's help you grow your money while you sleep</h3>
+                            <p>Create an investor account in few minutes select a package and start earing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="investment light">
+            <div class="investment-wrapper">
+                <div class="investment-title">
+                    <h1>Why Invest with us?</h1>
+                </div>
+                <div class="why-invest-cards">
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="" alt="checking">
+                        </div>
+                        <div>
+                            <h3>Strategic Alliance</h3>
+                            <p>As we continue to grow in the industry, we make efforts to work with strategic alliances so we could offer best of services to our investors and ensure a profitable return on investment. </p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="assets/images/icon/savings.png" alt="checking">
+                        </div>
+                        <div>
+                            <h3>Experience</h3>
+                            <p>With our dedicated and experienced financial experts, we maintain a high standard in delivering our services we ensure everyone achieve their financial goals. </p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="assets/images/icon/savings.png" alt="checking">
+                        </div>
+                        <div>
+                            <h3>Trust</h3>
+                            <p>We always keep to our words as effectiveness and efficiency is what we don’t joke with, when it comes to investment ROI, we are inarguably fast in making it happen for you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="investment">
+            <div class="investment-wrapper">
+                <div class="investment-title">
+                    <h1>A better pace for financial freedom </h1>
+                </div>
+                <div class="invest-cards">
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="" alt="checking">
+                        </div>
+                        <div class="card-content">
+                            <h3>Investment security</h3>
+                            <p>Your money is in safe hands our experienced financial experts and our insurance alliance, be rest assured your investment is safe.</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="thumb">
+                            <img src="assets/images/icon/savings.png" alt="checking">
+                        </div>
+                        <div class="card-content">
+                            <h3>R.O.I</h3>
+                            <p>We offer our investors and partners profitable return on investment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="register">
+            <div class="create-account">
+                <div class="title">
+                    <p>If you got up to this place, then you've just one step left. </p>
+                    <h1>Just few minutes to register </h1>
+                </div>
+                <div class="account-buttons">
+                    <div class="about-btn">
+                        <a href="">Create Account<span></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col colmain">
+                    <a class="head" href="https://justdreamglobal.com">
+                        <img src="assets/images/just-dream-global.png" alt="company logo">
+                        <p><b>Just- Dream Global. We Help You Achieve Your Financial Goal.</b></p>
+                        <ul class="social">
+                            <li>
+                                <b>Follow us:</b>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/JustdreamG" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/justdreamglobal/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/JustDreamGlobal/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/71096774/admin/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="footer-col-section2">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a class="footer-links" href="/">Home</a></li>
+                            <li><a class="footer-links" href="/about/">About</a></li>
+                            <li><a class="footer-links" href="/faq.html">FAQ</a></li>
+                            <li><a class="footer-links" href="">Contact</a></li>
+                            <li><a class="footer-links" href="">Terms and Conditions</a></li>
+                            <li><a class="footer-links" href="">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a class="footer-links" href="">Products</a></li>
+                            <li><a class="footer-links" href="">Business Loan</a></li>
+                            <li><a class="footer-links" href="">Personal Loan</a></li>
+                            <li><a class="footer-links" href="">Affiliate Program</a></li>
+                            <li><a class="footer-links" href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a class="footer-links" href="/contact-us/">Contact us</a></li>
+                            <li><a class="footer-links" href="/faq/">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="social">
+                    <a class="footer-socials" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="footer-socials" href="#"><i class="fab fa-google"></i></a>
+                    <a class="footer-socials" href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="last">
+                    <div class="col-md-12">
+                        <p class="copyright">
+                            Just-Dream Global 2022. All rights reserved.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
+    
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/faq.js"></script>
 
-        
-        </div>
-    </div>
-</section>
+</body>
+</html>

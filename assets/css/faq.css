@@ -15,6 +15,26 @@
     border-radius: 16px;
 }
 
+.faq-title {
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.faq-title a {
+    color: #1A4DBE;
+    text-decoration: none;
+}
+
+.faq-title p:first-child {
+    color: var(--head-alt-color);
+    font-weight: 600;
+}
+
+.faq-title h1 {
+    font-size: 36px;
+}
+
 .faq-sec {
     margin-top: 5%;
 }
