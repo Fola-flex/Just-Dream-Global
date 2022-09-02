@@ -1,15 +1,5 @@
-:root {
-    --body-font: 'Jost', sans-serif;
-    --body-color: #ffffff;
-    --para-color: #2C3655;
-    --head-color: #0A1023;
-    --head-alt-color: #055C2D;
-    --hover-color: #1A4DBE;
-    --background-color: #007aff12;
-}
-
 .about-header {
-    background-color: #007aff12;
+    background-color: var(--background-color);
 }
 
 .about-banner {

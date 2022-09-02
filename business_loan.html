@@ -11,6 +11,9 @@
     <title>Just Dream Global</title>
 </head>
 <body>
+    <a onclick="goTop()" class="scrollToTop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
     <header id="header">
         <nav>
             <div>
@@ -20,13 +23,13 @@
                 <span id="bars">&#9776;</span>
                 <ul id="list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href=about.html>About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <div class="dropdown">
                         <li><a>Product</a><i class="fa fa-caret-down"></i></li>
                         <div class="dropdown-content">
                             <ul>
                                 <div class="dropdown-two">
-                                    <li><a href="">Loans</a><i class="fa fa-caret-right"></i></li>
+                                    <li><a>Loans</a><i class="fa fa-caret-right"></i></li>
                                     <div class="sub-dropdown-content">
                                         <ul>
                                             <li><a href="business_loan.html">Business Loans</a></li>
@@ -43,6 +46,9 @@
                     </div>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="">Blog</a></li>
+                    <li class="account-btn">
+                        <a href="https://justdreamglobal.com/page/The+Brand" class="default-btn">Create Account</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -98,96 +104,50 @@
             </div>
         </section>
         <section class="loan-calculator-area">
-            <div class="value-wrapper">
-                <div class="value-title">
+            <div class="loan-calc-wrapper">
+                <div class="title">
                     <p>A business loan just as you need it.</p>
                     <h1>A flexible business loan on your own terms </h1>
                 </div>
                 <div class="calculator-wrapper">
                     <h1>Loan Calculator</h1>
-                    <div class="calculator">
-                        <div class="main-content">
-                            <div class="section-text">
-                                <h2 class="title">Put Your Plans into Action</h2>
-                                <p>Choose the Personal loan amount that you need ($1,000 to $30,000) and the payment period (6–18 months) that suits you best.</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <div class="range-amount">
+                                <h4>
+                                    <label>Business Loan Amount : </label>
+                                    <input type="text" disabled="" id="loan-amount">
+                                </h4>
                             </div>
-                            <form action="#">
-                                <div class="form-group">
-                                    <div class="range-amount">
-                                        <h4 class="d-flex align-items-center justify-content-center">
-                                            <label>Personal Loan Amount : </label>
-                                            <input type="text" disabled="" id="personal-amount">
-                                        </h4>
-                                    </div>
-                                    <div id="personal-slide" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                        <div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 58.1483%;">
-                                        </div>
-                                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 58.1483%;">
-                                        </span>
-                                    </div>
-                                </div>
-                                <ul class="nav nav-tabs justify-content-between" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-btn" id="months12-tab" data-bs-toggle="tab" data-bs-target="#months12" type="button" role="tab" aria-controls="months12" aria-selected="false">12 Months
-                                            <span class="mdr">Av. APR is 7.99%</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-btn" id="months18-tab" data-bs-toggle="tab" data-bs-target="#months18" type="button" role="tab" aria-controls="months18" aria-selected="false">18 Months
-                                            <span class="mdr">Av. APR is 7.99%</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-btn active" id="months24-tab" data-bs-toggle="tab" data-bs-target="#months24" type="button" role="tab" aria-controls="months24" aria-selected="true">24 Months
-                                            <span class="mdr">Av. APR is 7.99%</span>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-btn" id="months36-tab" data-bs-toggle="tab" data-bs-target="#months36" type="button" role="tab" aria-controls="months36" aria-selected="false">36 Months
-                                            <span class="mdr">Av. APR is 7.99%</span>
-                                        </button>
-                                    </li>
-                                </ul>
-                                <div class="bottom-area pt-120 d-xl-flex align-items-center justify-content-between">
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade" id="months12" role="tabpanel" aria-labelledby="months12-tab">
-                                            <h5>Monthly Payment: <span>$608.89</span></h5>
-                                        </div>
-                                        <div class="tab-pane fade" id="months18" role="tabpanel" aria-labelledby="months18-tab">
-                                            <h5>Monthly Payment: <span>$1208.89</span></h5>
-                                        </div>
-                                        <div class="tab-pane fade active show" id="months24" role="tabpanel" aria-labelledby="months24-tab">
-                                            <h5>Monthly Payment: <span>$1808.89</span></h5>
-                                        </div>
-                                        <div class="tab-pane fade" id="months36" role="tabpanel" aria-labelledby="months36-tab">
-                                            <h5>Monthly Payment: <span>$2408.89</span></h5>
-                                        </div>
-                                    </div>
-                                    <a href="#personal-loan-form" class="cmn-btn">Apply for a Personal loan</a>
-                                </div>
-                            </form>
+                            <div id="loan-slide" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 55.6962%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 55.6962%;"></span></div>
                         </div>
-                        <ul class="list d-lg-flex justify-content-between">
-                            <li class="list-item d-flex align-items-center">
-                                <span class="check d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/check.png" alt="icon">
-                                </span>
-                                <span>No SSN or credit history required</span>
+                        <ul class="months-tabs">
+                            <li class="tab-item">
+                                <button class="tab-item-btn" id="months6-tab" data-bs-toggle="tab" data-bs-target="#months6" type="button" role="tab" aria-controls="months6" aria-selected="true">6 Months</button>
                             </li>
-                            <li class="list-item d-flex align-items-center ">
-                                <span class="check d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/check.png" alt="icon">
-                                </span>
-                                <span>Checking for rate won't impact credit score</span>
+                            <li class="nav-item" role="presentation">
+                                <button class="tab-item-btn" id="months12-tab" data-bs-toggle="tab" data-bs-target="#months12" type="button" role="tab" aria-controls="months12" aria-selected="false">12 Months</button>
                             </li>
-                            <li class="list-item d-flex align-items-center ">
-                                <span class="check d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/icon/check.png" alt="icon">
-                                </span>
-                                <span>No prepayment fees</span>
+                            <li class="nav-item" role="presentation">
+                                <button class="tab-item-btn" id="months18-tab" data-bs-toggle="tab" data-bs-target="#months18" type="button" role="tab" aria-controls="months18" aria-selected="false">18 Months</button>
                             </li>
                         </ul>
-                    </div>
+                        <div class="installments">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="months6" role="tabpanel" aria-labelledby="months6-tab">
+                                    <h5>Monthly instalment of <span>$9.00</span></h5>
+                                </div>
+                                <div class="tab-pane fade" id="months12" role="tabpanel" aria-labelledby="months12-tab">
+                                    <h5>Monthly instalment of <span>$18.00</span></h5>
+                                </div>
+                                <div class="tab-pane fade" id="months18" role="tabpanel" aria-labelledby="months18-tab">
+                                    <h5>Monthly instalment of <span>$36.00</span></h5>
+                                </div>
+                            </div>
+                            <a href="#business-loan-form" class="cmn-btn">Apply for a business loan</a>
+                        </div>
+                    </form>
+                
                 </div>
             </div>
         </section>
@@ -258,31 +218,7 @@
                     <a class="head" href="https://justdreamglobal.com">
                         <img src="assets/images/just-dream-global.png" alt="company logo">
                         <p><b>Just- Dream Global. We Help You Achieve Your Financial Goal.</b></p>
-                        <ul class="social">
-                            <li>
-                                <b>Follow us:</b>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/JustdreamG" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/justdreamglobal/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/JustDreamGlobal/" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/71096774/admin/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    </a>
                 </div>
                 <div class="footer-col-section2">
                     <div class="footer-col">
@@ -315,9 +251,10 @@
             </div>
             <div class="row">
                 <div class="social">
-                    <a class="footer-socials" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="footer-socials" href="#"><i class="fab fa-google"></i></a>
-                    <a class="footer-socials" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer-socials" href="https://twitter.com/JustdreamG" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="footer-socials" href="https://www.instagram.com/justdreamglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="footer-socials" href="https://www.facebook.com/JustDreamGlobal/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="footer-socials" href="https://www.linkedin.com/company/71096774/admin/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="last">
                     <div class="col-md-12">
@@ -329,7 +266,6 @@
             </div>
         </div>
     </footer>
-    
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/faq.js"></script>

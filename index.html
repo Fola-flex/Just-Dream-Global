@@ -11,6 +11,9 @@
     <title>Just Dream Global</title>
 </head>
 <body>
+    <a onclick="goTop()" class="scrollToTop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
     <header id="header">
         <nav>
             <div>
@@ -43,12 +46,15 @@
                     </div>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="">Blog</a></li>
+                    <li class="account-btn">
+                        <a href="register.html" class="default-btn">Create Account</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="carousel-section">
+        <section class="carousel-section reveal">
             <div class="main-carousel">
                 <div class="carousel-cell">
                     <div class="check-form">
@@ -136,11 +142,10 @@
                 </div>
             </div>
         </section>
-        <section class="about-area">
+        <section class="about-area reveal">
             <div class="about-container">
                 <div class="loan-section">
                     <h1>Loans for Every Business Need</h1>
-                    <p>It is a known truth that capital is the bloodline of every business why not spice up your business with creative, exquisite, and top-notch ideas that will change your business history for better by applying for our loan.</p>
                     <div class="card-row">
                         <div class="loan-card">
                             <div class="single-box">
@@ -182,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section class="credit-area">
+        <section class="credit-area reveal">
             <div class="credit-solution">
                 <div class="credit-title">
                     <h1>Credit Solution at your fingertips</h1>
@@ -218,7 +223,7 @@
                 </div>
             </div>
         </section>
-        <section class="accounts-area">
+        <section class="accounts-area reveal">
             <div class="create-account">
                 <div class="title">
                     <p>Take a step to your financial solution</p>
@@ -234,7 +239,7 @@
                 </div>
             </div>
         </section>
-        <section class="loans">
+        <section class="loans reveal">
             <div class="card-row">
                 <div class="loan-text">
                     <p>Getting Started</p>
@@ -320,7 +325,7 @@
                 </div>
             </div>
         </section>
-        <section class="solutions">
+        <section class="solutions reveal">
             <div class="create-account">
                 <div class="title">
                     <p>Need a personalized solution</p>
@@ -333,7 +338,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="reveal">
             <div class="testimonials">
                 <div class="title">
                     <p>Testimonials</p>
@@ -376,7 +381,7 @@
 				</div>
             </div>
         </section>
-        <section class="articles-area">
+        <section class="articles-area reveal">
             <div class="articles-container">
                 <div class="articles-title">
                     <p>Resources that help you grow</p>
@@ -461,7 +466,7 @@
                 </div>
             </div>
         </section>
-        <section id="faq_page">
+        <section id="faq_page" class="reveal">
             <div class="faq-title">
                 <p>If you have questions, we have answers</p>
                 <h1>Frequently asked questions</h1>
@@ -577,31 +582,7 @@
                     <a class="head" href="https://justdreamglobal.com">
                         <img src="assets/images/just-dream-global.png" alt="company logo">
                         <p><b>Just- Dream Global. We Help You Achieve Your Financial Goal.</b></p>
-                        <ul class="social">
-                            <li>
-                                <b>Follow us:</b>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/JustdreamG" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/justdreamglobal/" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/JustDreamGlobal/" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/71096774/admin/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    </a>
                 </div>
                 <div class="footer-col-section2">
                     <div class="footer-col">
@@ -634,9 +615,10 @@
             </div>
             <div class="row">
                 <div class="social">
-                    <a class="footer-socials" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="footer-socials" href="#"><i class="fab fa-google"></i></a>
-                    <a class="footer-socials" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer-socials" href="https://twitter.com/JustdreamG" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="footer-socials" href="https://www.instagram.com/justdreamglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="footer-socials" href="https://www.facebook.com/JustDreamGlobal/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="footer-socials" href="https://www.linkedin.com/company/71096774/admin/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="last">
                     <div class="col-md-12">
@@ -651,6 +633,7 @@
     
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="assets/js/index.js"></script>
+<script src="assets/js/slider.js"></script>
 <script src="assets/js/faq.js"></script>
 
 </body>

@@ -19,39 +19,57 @@ function shownav() {
     }
 };
 
+/*section animatioin */
+const fades = document.querySelectorAll('.reveal');
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'center',
-  autoPlay: 6000,
-  wrapAround: true
-});
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.testimonial-carousel', {
-  // options
-  autoPlay: 4000,
-  wrapAround: true,
-  prevNextButtons: false
-});
-
-fades = document.querySelector('#header');
 const appearOption = {
     threshold: 0,
-    rootMargin: "0px 0px 0px 0px"
+    rootMargin: "0px 0px -150px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries)  {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio > 0) {
-        entry.target.classList.remove('animated', 'fadeInDown');
-        entry.target.style.position = "initial";
-    } else {
-        entry.target.classList.add('animated', 'fadeInDown');
+const appearOnScroll = new IntersectionObserver(function(entries) 
+{entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('active');
     }
 })}, appearOption)
 
-appearOnScroll.observe(fades)
+fades.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
 
+let newHeader = document.getElementById('header');
+let headerHeight = newHeader.offsetTop + newHeader.offsetHeight
+let topBtn = document.getElementsByClassName('scrollToTop')[0]
+
+window.addEventListener('scroll', () => {
+    displayHeader()
+    showTopBtn()
+});
+
+function displayHeader() {
+    if (window.scrollY < headerHeight) {
+        newHeader.style.position = "initial";
+        newHeader.classList.remove('animated', 'fadeInDown')
+    } else {
+        newHeader.style.position = "sticky";
+        newHeader.classList.add("animated", "fadeInDown")
+    }
+}
+
+function showTopBtn() {
+    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 ) {
+        topBtn.style.visibility = 'visible';
+        topBtn.style.opacity = '1';
+        topBtn.classList.add('active')
+    } else {
+        topBtn.style.visibility = 'none';
+        topBtn.style.opacity = '0'
+        topBtn.classList.remove('active')
+    }
+}
+
+function goTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+}
