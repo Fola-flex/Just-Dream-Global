@@ -161,7 +161,7 @@
 
 .help-cards .card-wrapper {
     width: 300px;
-    height: 100%;
+    height: auto;
     max-width: 95%;
     text-align: center;
     border: 1px solid var(--hover-color);

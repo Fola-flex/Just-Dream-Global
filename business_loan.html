@@ -39,15 +39,14 @@
                                 </div>
                                 <li><a href="invest.html">Investment</a></li>
                                 <li><a href="">Card</a></li>
-                                <li><a href="">Just-Credit</a></li>
+                                <li><a href="http://just-credit.com/">Just-Credit</a></li>
                             </ul>
-                          
                         </div> 
                     </div>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="">Blog</a></li>
                     <li class="account-btn">
-                        <a href="https://justdreamglobal.com/page/The+Brand" class="default-btn">Create Account</a>
+                        <a href="register.html" class="default-btn">Create Account</a>
                     </li>
                 </ul>
             </div>
@@ -95,11 +94,11 @@
                         </div>
                     </div>
                     <button class="business-loan-btn">
-                        <a href="" class="default-btn">Apply for a business loan</a>
+                        <a href="personal_loan.html#personal-loan-application" class="default-btn">Apply for a business loan</a>
                     </button>
                 </div>
                 <div class="business-image">
-                    <img src="" alt="company image">
+                    <img src="assets/images/j5.png" alt="company image">
                 </div>
             </div>
         </section>
@@ -111,40 +110,42 @@
                 </div>
                 <div class="calculator-wrapper">
                     <h1>Loan Calculator</h1>
-                    <form action="#">
+                    <form>
                         <div class="form-group">
                             <div class="range-amount">
                                 <h4>
-                                    <label>Business Loan Amount : </label>
-                                    <input type="text" disabled="" id="loan-amount">
+                                    <label>Business Loan Amount : &#x20A6;</label>
+                                    <input type="text" disabled="" id="loan-amount" value="245000">
                                 </h4>
                             </div>
-                            <div id="loan-slide" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header ui-slider-range-min" style="width: 55.6962%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 55.6962%;"></span></div>
+                            <div id="loan-slide">
+                                <input type="range" min="10000" max="500000" class="thumb_range" id="input"  style="background: linear-gradient(to right, var(--hover-color) 0%, var(--hover-color) 49.7231%, var(--background-color) 49.7231%, var(--background-color) 100%);">
+                            </div>
                         </div>
                         <ul class="months-tabs">
                             <li class="tab-item">
-                                <button class="tab-item-btn" id="months6-tab" data-bs-toggle="tab" data-bs-target="#months6" type="button" role="tab" aria-controls="months6" aria-selected="true">6 Months</button>
+                                <div class="tab-item-btn highlight" id="months6-tab">6 Months</div>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="tab-item-btn" id="months12-tab" data-bs-toggle="tab" data-bs-target="#months12" type="button" role="tab" aria-controls="months12" aria-selected="false">12 Months</button>
+                            <li class="tab-item">
+                                <div class="tab-item-btn" id="months12-tab">12 Months</div>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="tab-item-btn" id="months18-tab" data-bs-toggle="tab" data-bs-target="#months18" type="button" role="tab" aria-controls="months18" aria-selected="false">18 Months</button>
+                            <li class="tab-item">
+                                <div class="tab-item-btn" id="months18-tab">18 Months</div>
                             </li>
                         </ul>
                         <div class="installments">
                             <div class="tab-content">
-                                <div class="tab-pane fade show active" id="months6" role="tabpanel" aria-labelledby="months6-tab">
-                                    <h5>Monthly instalment of <span>$9.00</span></h5>
+                                <div class="tab-pane fade active show" id="months6">
+                                    <h5>Monthly instalment of <span>&#x20A6;900.00</span></h5>
                                 </div>
-                                <div class="tab-pane fade" id="months12" role="tabpanel" aria-labelledby="months12-tab">
-                                    <h5>Monthly instalment of <span>$18.00</span></h5>
+                                <div class="tab-pane fade" id="months12">
+                                    <h5>Monthly instalment of <span>&#x20A6;1800.00</span></h5>
                                 </div>
-                                <div class="tab-pane fade" id="months18" role="tabpanel" aria-labelledby="months18-tab">
-                                    <h5>Monthly instalment of <span>$36.00</span></h5>
+                                <div class="tab-pane fade" id="months18">
+                                    <h5>Monthly instalment of <span>&#x20A6;3600.00</span></h5>
                                 </div>
                             </div>
-                            <a href="#business-loan-form" class="cmn-btn">Apply for a business loan</a>
+                            <a href="personal_loan.html#personal_loan_application" class="cmn-btn">Apply for a business loan</a>
                         </div>
                     </form>
                 
@@ -169,7 +170,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="" alt="checking">
                         </div>
                         <div>
                             <h3>2. Get Verified  </h3>
@@ -187,7 +188,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="" alt="checking">
                         </div>
                         <div>
                             <h3>4. Loan Approval</h3>
@@ -205,7 +206,7 @@
                 </div>
                 <div class="account-buttons">
                     <div class="about-btn">
-                        <a href="">Create Account<span></span></a>
+                        <a href="register.html">Create Account<span></span></a>
                     </div>
                 </div>
             </div>
@@ -266,9 +267,7 @@
             </div>
         </div>
     </footer>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="assets/js/index.js"></script>
-<script src="assets/js/faq.js"></script>
-
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/calculator.js"></script>
 </body>
 </html>

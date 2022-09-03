@@ -8,6 +8,7 @@
     max-width: 700px;
     margin: auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .application-title p:first-child {

@@ -32,6 +32,7 @@
     max-width: 1200px;
     margin: auto;
     display: flex;
+    align-items: center;
     
 }
 
@@ -135,11 +136,19 @@
 }
 
 .loan-calc-wrapper .calculator-wrapper {
-    margin-top: 20px;
-    max-width: 800px;
+    width: 95%;
     margin: auto;
+    margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%)
+    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+    padding: 20px 0px;
+    max-width: 1200px
+}
+
+.calculator-wrapper form {
+    padding: 20px 20px 30px;
+    width: 100%;
+    margin: auto;
 }
 
 .loan-calculator-area .form-group {
@@ -154,10 +163,116 @@
 
 .form-group .range-amount label {
     display: inline-block;
+    font-size: 26px;
 }
 
 .form-group .range-amount input {
     width: 25%;
+    padding: 0;
+    margin: 0;
+    color: var(--head-alt-color);
+    background: transparent;
+    border: none;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: Jost;
+    font-size: 30px;
+    display: block;
+}
+
+.form-group #loan-slide {
+    margin: 35px 0px 44px;
+}
+
+.form-group #loan-slide .thumb_range {
+    height: 10px;
+    margin-top: 7px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background: #EEF1FF;
+    width: 90%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: #EEF1FF;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: none;
+    color: transparent;
+}
+
+#input {
+    --webkit-appearance: none;
+    background: linear-gradient(to right, var(--hover-color) 0%, var(--hover-color) 50%, var(--background-color) 50%, var(--background-color) 100%);;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--hover-color);
+}
+
+input[type="range"]::-ms-fill-lower {
+    background-color: var(--hover-color);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: var(--hover-color);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    box-shadow: 0px 4px 4px rgb(53 78 133 / 30%);
+    height: 40px;
+    width: 40px;
+    z-index: 6;
+    top: -16px;
+  }
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: var(--hover-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(53 78 133 / 30%);
+    height: 40px;
+    width: 40px;
+    z-index: 6;
+    top: -16px;
+  }
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: var(--hover-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(53 78 133 / 30%);
+    height: 40px;
+    width: 40px;
+    z-index: 6;
+    top: -16px;
+  }
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer; 
 }
 
 .calculator-wrapper .months-tabs {
@@ -165,12 +280,13 @@
     border: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
 
 .calculator-wrapper .months-tabs .tab-item-btn {
     padding: 10px 30px 15px;
+    margin-bottom: 20px;
     font-weight: 500;
     text-align: center;
     color: #0A1023;
@@ -180,27 +296,66 @@
     border-radius: 50px;
 }
 
-.calculator-wrapper .installment {
-    padding-top: 120px;
+.calculator-wrapper .installments {
+    padding-top: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.tab-content > .tab-pane.active {
+.tab-content h5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tab-content h5 span {
+    color: var(--head-alt-color);
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.tab-content>.tab-pane.active {
     display: block;
+    opacity: 1;
 }
 
-.tab-content>.tab-pane {
-    display: none;
+
+.months-tabs .tab-item .tab-item-btn.highlight {
+    color: var(--body-color);
+    background: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 1s;
 }
 
 .fade {
     transition: opacity .15s linear;
 }
 
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
 .cmn-btn {
-    padding: 10px 30px 15px;
+    padding: 15px 30px;
     font-weight: 500;
     text-align: center;
     background: var(--hover-color);
@@ -208,6 +363,14 @@
     border: 1px solid var(--hover-color);
     transition: 0.3s;
     border-radius: 50px;
+    text-decoration: none;
+}
+
+.cmn-btn a  {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    text-decoration: none;
 }
 
 .values .value-wrapper {
@@ -295,12 +458,74 @@
 
     .business-image {
         display: none;
-    }
-    
+    }   
 }
  
 @media screen and (max-width: 460px) {
     .business-banner {
         width: 100%;
+    }
+
+    .calculator-wrapper .installments {
+        padding-top: 40px;
+    }
+
+    .cmn-btn {
+        margin-top: 10px;
+    }
+
+    .form-group .range-amount h4 label {
+        font-size: 18px;
+    }
+
+    .form-group .range-amount input {
+        font-size: 16px;
+    }
+
+    .tab-content h5 {
+        font-size: 18px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        height: 30px;
+        width: 30px;
+        top: -12px;
+    }
+    
+    input[type="range"]::-moz-range-thumb {
+        height: 30px;
+        width: 30px;
+        top: -12px;
+    }
+    
+    input[type="range"]::-ms-thumb {
+        height: 30px;
+        width: 30px;
+        top: -12px;
+    }
+
+    .business-loan-text h1, .business-banner h1 {
+        font-size: 40px;
+    }
+
+    .loan-calc-wrapper .title h1 {
+        font-size: 40px;
+    }
+
+    .calculator-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .loan-calculator-area .loan-calc-wrapper {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .loan-calc-wrapper .calculator-wrapper {
+        width: 100%;
+    }
+
+    .loan-calc-wrapper .title {
+        padding: 0 10px;
     }
 }

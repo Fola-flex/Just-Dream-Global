@@ -31,11 +31,16 @@
     width: 80%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
 }
 
 .about-content > div {
-    width: 50%;
+    width: 100%;
+}
+
+.about-content > div img {
+    width: 100%;
 }
 
 .about-text {

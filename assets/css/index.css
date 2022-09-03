@@ -427,7 +427,7 @@ nav .dropdown .dropdown-content ul {
 }
 
 .loan-card {
-    width: 350px;
+    width: 450px;
     max-width: 90%;
 }
 
@@ -575,7 +575,7 @@ nav .dropdown .dropdown-content ul {
 .create-account .title p, .testimonials .title p {
     color: var(--head-alt-color);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .create-account .title h1, .testimonials h1 {
@@ -691,6 +691,42 @@ nav .dropdown .dropdown-content ul {
 .solutions {
     background: var(--background-color);
     margin-top: 10%;
+}
+
+.solutions-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.solutions-container .solutions-text {
+    width: 100%;
+    padding: 60px 30px;
+    padding-right: 10px;
+}
+
+.solutions-text p {
+    color: var(--head-alt-color);
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.solutions-text h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.solutions-image {
+    width: 100%;
+}
+
+.solutions-image img {
+    width: 100%;
 }
 
 .clients-item {
@@ -883,12 +919,11 @@ nav .dropdown .dropdown-content ul {
 }
 
 .register .about-btn {
-    background: #05c5f5;
     color: var(--head-color);
 }
 
 .register .about-btn a {
-    background: none;
+    background: #05c5f5;
 }
 
 .footer {
@@ -1177,6 +1212,10 @@ footer .container .row .footer-col .social-links a:hover{
         padding-left: 0;
     }
 
+    .solutions-image {
+        display: none;
+    }
+
     .footer {
         padding: 200px 30px 50px;
     }
@@ -1196,6 +1235,10 @@ footer .container .row .footer-col .social-links a:hover{
         padding: 8px 20px;
     }
 
+    .check-form  {
+        margin-top: 2rem;
+    }
+
     .register .create-account {
         padding-top: 40px;
         padding-bottom: 10px;
@@ -1209,6 +1252,14 @@ footer .container .row .footer-col .social-links a:hover{
         color: var(--hover-color);
         font-size: 70px;
         opacity: 0.3;
+    }
+
+    .solutions-container .solutions-text {
+        padding: 50px 10px;
+    }
+
+    .solutions-container .solutions-text h1 {
+        font-size: 30px;
     }
 
     .loan-section .single-box {
