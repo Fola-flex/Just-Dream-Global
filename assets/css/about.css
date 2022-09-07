@@ -76,18 +76,44 @@
 
 .mission-area {
     text-align: center;
-    margin: auto;
-    padding: 50px 10px;
-    width: 500px;
+    padding: 50px 20px;
     max-width: 100%;
 }
 
-.mission h1, .vision h1 {
+.mission h1 {
     font-size: 40px;
+    color: white;
+    position: absolute;
 }
 
-.mission, .vision {
+.mission {
+    margin: auto;
     margin-bottom: 40px;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+    background: linear-gradient(105deg, var(--hover-color) 40%, white 40.2%);
+}
+
+.mission .mission-title {
+    width: 40%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission .mission-text {
+    width: 60%;
+}
+
+.mission p {
+    margin: auto;
+    padding: 0px 10px;
 }
 
 .values {
@@ -139,7 +165,6 @@
     width: 100px;
     height: 100px;
     border-radius: 70px;
-    background-color: #1A4DBE;
     color: #FFFFFF;
     margin: auto;
     margin-bottom: 30px;
@@ -161,6 +186,7 @@
     .about-content {
         flex-direction: column;
         width: 100%;
+        gap: 10px;
     }
 
     .about-content > div {
@@ -173,7 +199,20 @@
     .value-title {
         width: 80%;
     }
+
+    .mission {
+        width: 100%;
+    }
+
+    .mission h1 {
+        font-size: 28px;
+    }
+    
+    .mission p {
+        font-size: 12px;
+    }
 }
+
 
 @media (max-width: 460px) {
     .about-content > div {
@@ -182,5 +221,27 @@
 
     .value-title {
         width: 100%;
+    }
+
+    .mission-area {
+        padding: 50px 15px;
+    }
+
+    .mission {
+        flex-direction: column;
+        background: white;
+    }
+    
+    .mission .mission-title {
+        background: var(--hover-color);
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 0;
+    }
+    
+    .mission .mission-text {
+        width: 100%;
+        padding: 25px 0px
     }
 }

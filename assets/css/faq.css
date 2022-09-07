@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&display=swap');
 
+.faq-header {
+    background-color: var(--background-color);
+}
+
+.faq-banner {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.faq-banner > div {
+    display: flex;
+    align-items: center;
+}
+
+.faq-banner > div i {
+    padding: 0px 8px;
+    color: var(--hover-color);
+}
+
+.faq-banner h1, .faq-title h1 {
+    font-size: 42px;
+}
+
 #faq_page {
     margin: 15% 0;
 }
@@ -99,7 +123,7 @@
 }
 
 .faqs.access .answer {
-    max-height: 300px;
+    max-height: 500px;
     animation: fade 0.5s ease-in-out;
     padding-top: 30px;
     margin-top: 30px;
@@ -198,5 +222,20 @@
 
     .help-sec {
         padding: 70px 20px;
+    }
+
+    .question-container {
+        height: 100%;
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .question-container .title {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .answer p, .answer ul {
+        font-size: 16px;
     }
 }

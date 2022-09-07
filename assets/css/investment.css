@@ -97,6 +97,10 @@
     margin-bottom: 10px;
 }
 
+.why-invest-cards .thumb img {
+    width: 100%;
+}
+
 .invest-cards .card-content {
     width: 70%;
 }

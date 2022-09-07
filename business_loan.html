@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/just-dream-global.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/business.css">
+    <link rel="stylesheet" href="assets/css/personal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Just Dream Global</title>
 </head>
 <body>
@@ -46,14 +47,14 @@
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="">Blog</a></li>
                     <li class="account-btn">
-                        <a href="register.html" class="default-btn">Create Account</a>
+                        <a href="login.html" class="default-btn">Create Account</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="business-header">
+        <section class="business-header reveal">
             <div class="business-banner">
                 <h1>Business Loans</h1>
                 <div>
@@ -67,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="business-loans">
+        <section class="business-loans reveal">
             <div class="business-card">
                 <div class="business-text-wrapper">
                     <div class="business-loan-text">
@@ -94,15 +95,15 @@
                         </div>
                     </div>
                     <button class="business-loan-btn">
-                        <a href="personal_loan.html#personal-loan-application" class="default-btn">Apply for a business loan</a>
+                        <a href="#business-loan-application" class="default-btn">Apply for a business loan</a>
                     </button>
                 </div>
                 <div class="business-image">
-                    <img src="assets/images/j5.png" alt="company image">
+                    <img src="assets/images/j7.png" alt="company image">
                 </div>
             </div>
         </section>
-        <section class="loan-calculator-area">
+        <section class="loan-calculator-area reveal">
             <div class="loan-calc-wrapper">
                 <div class="title">
                     <p>A business loan just as you need it.</p>
@@ -115,7 +116,7 @@
                             <div class="range-amount">
                                 <h4>
                                     <label>Business Loan Amount : &#x20A6;</label>
-                                    <input type="text" disabled="" id="loan-amount" value="245000">
+                                    <input type="text" disabled id="loan-amount" value="245000">
                                 </h4>
                             </div>
                             <div id="loan-slide">
@@ -145,14 +146,13 @@
                                     <h5>Monthly instalment of <span>&#x20A6;3600.00</span></h5>
                                 </div>
                             </div>
-                            <a href="personal_loan.html#personal_loan_application" class="cmn-btn">Apply for a business loan</a>
+                            <a href="#business_loan_application" class="cmn-btn">Apply for a business loan</a>
                         </div>
                     </form>
-                
                 </div>
             </div>
         </section>
-        <section class="values">
+        <section class="values reveal">
             <div class="value-wrapper">
                 <div class="value-title">
                     <p>A better way to get loan</p>
@@ -161,7 +161,7 @@
                 <div class="value-cards">
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="" alt="checking">
+                            <img src="assets/icons/fill_form.png" alt="checking">
                         </div>
                         <div>
                             <h3>1. Register on our platform </h3>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="" alt="checking">
+                            <img src="assets/icons/qualified.png" alt="checking">
                         </div>
                         <div>
                             <h3>2. Get Verified  </h3>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/send_document.png" alt="checking">
                         </div>
                         <div>
                             <h3>3. Select a loan package</h3>
@@ -188,13 +188,52 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="" alt="checking">
+                            <img src="assets/icons/get_loan.png" alt="checking">
                         </div>
                         <div>
                             <h3>4. Loan Approval</h3>
                             <p>Once you summit your loan application our team will review it for compliance once it been approved you get your fund in your bank account in just minutes.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="business_loan_application" class="reveal">
+            <div class="application-card">
+                <div class="application-heading">
+                    <h1>Apply For a Loan</h1>
+                    <p>Fill the pre-application form below and our financial experts will get in touch with you in just a second.</p>
+                </div>
+                    <div class="application-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input name="name" type="text" placeholder="What's your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input name="email" type="email" placeholder="What's your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Phone</label>
+                            <input name="telephone" type="tel" placeholder="0804 090 6505" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input name="state" type="text" placeholder="Lagos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loan-amt">Loan Amount</label>
+                            <input name="loan-amt" type="number" placeholder="Ex. 200,000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loan-date">Loan Date</label>
+                            <input name="loan-date" type="date" placeholder="Ex. 12 months" required>
+                        </div>
+                        <button type="submit" name="submit" class="personal-loan-btn">
+                            <a href="" class="default-btn">Apply now</a>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>

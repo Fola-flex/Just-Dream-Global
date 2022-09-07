@@ -108,6 +108,16 @@
     background: none;
 }
 
+.login-form p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.login-form p a {
+    text-decoration: none;
+    color: var(--hover-color);
+}
+
 @media (max-width: 460px) {
     .login-form .form-group {
         width: 100%;

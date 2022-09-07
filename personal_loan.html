@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/just-dream-global.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/business.css">
     <link rel="stylesheet" href="assets/css/personal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Just Dream Global</title>
 </head>
 <body>
@@ -54,7 +54,7 @@
         </nav>
     </header>
     <main>
-        <section class="business-header">
+        <section class="business-header reveal">
             <div class="business-banner">
                 <h1>Personal Loans</h1>
                 <div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="business-loans">
+        <section class="business-loans reveal">
             <div class="business-card">
                 <div class="business-text-wrapper">
                     <div class="business-loan-text">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </section>
-        <section class="business-loans light">
+        <section class="business-loans reveal light">
             <div class="business-card">
                 <div class="business-image">
                     <img src="assets/images/j4.png" alt="company image">
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="business-loans">
+        <section class="business-loans reveal">
             <div class="business-card">
                 <div class="business-text-wrapper">
                     <div class="business-loan-text">
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <section class="business-loans light">
+        <section class="business-loans reveal light">
             <div class="business-card">
                 <div class="business-image">
                     <img src="assets/images/j6.png" alt="company image">
@@ -191,7 +191,74 @@
                 </div>
             </div>
         </section>
-        <section class="values personal">
+        <section class="loan-calculator-area reveal">
+            <div class="loan-calc-wrapper">
+                <div class="title">
+                    <p>A personal loan just as you need it.</p>
+                    <h1>A flexible personal loan on your own terms </h1>
+                </div>
+                <div class="calculator-wrapper">
+                    <h1>Loan Calculator</h1>
+                    <form>
+                        <div class="form-group">
+                            <div class="range-amount">
+                                <h4>
+                                    <label>Personal Loan Amount : <span>&#x20A6;</span></label>
+                                    <input type="text" disabled id="loan-amount" value="245000">
+                                </h4>
+                            </div>
+                            <div id="loan-slide">
+                                <input type="range" min="10000" max="500000" class="thumb_range" id="input"  style="background: linear-gradient(to right, var(--hover-color) 0%, var(--hover-color) 49.7231%, var(--background-color) 49.7231%, var(--background-color) 100%);">
+                            </div>
+                        </div>
+                        <ul class="months-tabs">
+                            <li class="tab-item">
+                                <div class="tab-item-btn highlight" id="months12-tab">
+                                    <p>12 Months</p>
+                                    <p>Avg. APR is 7.99%</p>
+                                </div>
+                            </li>
+                            <li class="tab-item">
+                                <div class="tab-item-btn" id="months18-tab">
+                                    <p>18 Months</p>
+                                    <p>Avg. APR is 7.99%</p>
+                                </div>
+                            </li>
+                            <li class="tab-item">
+                                <div class="tab-item-btn" id="months24-tab">
+                                    <p>24 Months</p>
+                                    <p>Avg. APR is 7.99%</p>
+                                </div>
+                            </li>
+                            <li class="tab-item">
+                                <div class="tab-item-btn" id="months36-tab">
+                                    <p>36 Months</p>
+                                    <p>Avg. APR is 7.99%</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="installments">
+                            <div class="tab-content">
+                                <div class="tab-pane fade active show" id="months12">
+                                    <h5>Monthly instalment of <span>&#x20A6;900.00</span></h5>
+                                </div>
+                                <div class="tab-pane fade" id="months18">
+                                    <h5>Monthly instalment of <span>&#x20A6;1800.00</span></h5>
+                                </div>
+                                <div class="tab-pane fade" id="months24">
+                                    <h5>Monthly instalment of <span>&#x20A6;3600.00</span></h5>
+                                </div>
+                                <div class="tab-pane fade" id="months36">
+                                    <h5>Monthly instalment of <span>&#x20A6;5000.00</span></h5>
+                                </div>
+                            </div>
+                            <a href="personal_loan.html#personal_loan_application" class="cmn-btn">Apply for a business loan</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="values reveal personal">
             <div class="value-wrapper">
                 <div class="value-title">
                     <p>A better way to get loan</p>
@@ -200,7 +267,7 @@
                 <div class="value-cards">
                     <div class="card-wrapper personal">
                         <div class="thumb">
-                            <img src="" alt="checking">
+                            <img src="assets/icons/fill_form.png" alt="checking">
                         </div>
                         <div>
                             <h3>1. Register on our platform </h3>
@@ -209,7 +276,7 @@
                     </div>
                     <div class="card-wrapper personal">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/qualified.png" alt="checking">
                         </div>
                         <div>
                             <h3>2. Get Verified  </h3>
@@ -218,7 +285,7 @@
                     </div>
                     <div class="card-wrapper personal">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/send_document.png" alt="checking">
                         </div>
                         <div>
                             <h3>3. Select a loan package</h3>
@@ -227,7 +294,7 @@
                     </div>
                     <div class="card-wrapper personal">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/get_loan.png" alt="checking">
                         </div>
                         <div>
                             <h3>4. Loan Approval</h3>
@@ -246,7 +313,7 @@
                 </div>
             </div>
         </section>
-        <section  id="personal_loan_application">
+        <section  id="personal_loan_application" class="reveal">
             <div class="application-card">
                 <div class="application-heading">
                     <h1>Apply For a Loan</h1>
@@ -356,5 +423,6 @@
     </footer>   
     <script src="assets/js/index.js"></script>
     <script src="assets/js/faq.js"></script>
+    <script src="assets/js/personal_calculator.js"></script>
 </body>
 </html>

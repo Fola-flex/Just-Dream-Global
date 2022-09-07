@@ -15,6 +15,7 @@
 .business-banner > div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .business-banner > div i {
@@ -24,7 +25,7 @@
 
 .business-loans {
     margin: 6% 0;
-    padding: 50px 20px;
+    padding: 50px;
 }
 
 .business-card {
@@ -81,6 +82,7 @@
 .business-loan-btn a {
     text-decoration: none;
     color: #FFFFFF;
+    font-family: Jost;
 }
 
 .objectives  div {
@@ -164,6 +166,11 @@
 .form-group .range-amount label {
     display: inline-block;
     font-size: 26px;
+}
+
+.form-group .range-amount label span {
+    color: var(--head-alt-color);
+    font-size: 30px;
 }
 
 .form-group .range-amount input {
@@ -276,16 +283,17 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .calculator-wrapper .months-tabs {
-    padding: 0 30px;
+    padding: 0 20px;
     border: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style-type: none;
+    gap: 10px;
 }
 
 .calculator-wrapper .months-tabs .tab-item-btn {
-    padding: 10px 30px 15px;
+    padding: 15px 30px;
     margin-bottom: 20px;
     font-weight: 500;
     text-align: center;
@@ -446,6 +454,10 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-bottom: 30px;
 }
 
+#business_loan_application .application-card {
+    transform: none;
+}
+
 .light {
     background-color: var(--background-color);
 }
@@ -464,6 +476,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 @media screen and (max-width: 460px) {
     .business-banner {
         width: 100%;
+    }
+
+    .business-loans {
+        margin: 6% 0;
+        padding: 50px 20px;
+        margin-bottom: 5%;
     }
 
     .calculator-wrapper .installments {
@@ -522,10 +540,18 @@ input[type="range"]::-webkit-slider-runnable-track {
     }
 
     .loan-calc-wrapper .calculator-wrapper {
-        width: 100%;
+        width: 95%;
     }
 
     .loan-calc-wrapper .title {
         padding: 0 10px;
+    }
+
+    .calculator-wrapper form {
+        padding: 20px 0px 30px;
+    }
+
+    .form-group .range-amount label span {
+        font-size: 16px;
     }
 }
