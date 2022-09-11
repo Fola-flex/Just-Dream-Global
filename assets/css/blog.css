@@ -247,7 +247,6 @@
 .blog-side-area .single .blog-item {
     margin-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .blog-side-area .single .blog-item h6 {
