@@ -220,6 +220,15 @@
     text-decoration: none;
 }
 
+.blog-side-area .single.social .social-link a:hover {
+    background: var(--hover-color);
+}
+
+.blog-side-area .single.social .social-link a:hover i {
+    background: var(--hover-color);
+    color: white;
+}
+
 .single h5 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -228,6 +237,11 @@
 
 .single .blog-item .img-area {
     margin-right: 20px;
+    width: 160px;
+}
+
+.single .blog-item .img-area img {
+    width: 100%;
 }
 
 .blog-side-area .single .blog-item {

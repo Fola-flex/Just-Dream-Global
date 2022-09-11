@@ -8,6 +8,9 @@
     --head-alt-color: #055C2D;
     --hover-color: #1A4DBE;
     --background-color: #F5FAFF;
+    --big-banner-font-size: 76px;
+    --medium-banner-font-size: 52px;
+    --small-banner-font-size: 42px;
 }
 
 * {
@@ -113,13 +116,12 @@ nav .nav-links ul a {
 }
 
 nav .nav-links ul .account-btn {
-    padding: 15px 30px;
+    padding: 15px 35px;
     background-color: var(--hover-color);
     color: var(--body-color);
     outline: none;
     border: none;
     border-radius: 50px;
-    width: 180px;
 }
 
 nav .nav-links ul .account-btn a {
@@ -227,7 +229,7 @@ nav .dropdown .dropdown-content ul {
 }
 
 .check-form {
-    margin: 4rem auto;
+    margin: 2rem auto;
     position: relative;
     z-index: 1;
     border-radius: 4px;
@@ -280,7 +282,7 @@ nav .dropdown .dropdown-content ul {
     list-style-type: none;
 }
 
-.main-banner-content ul > div {
+.main-banner-content ul > div, .easy-investment-text div {
     display: flex;
     align-items: center;
 }
@@ -297,12 +299,16 @@ nav .dropdown .dropdown-content ul {
     margin-bottom: 10px;
 }
 
+.main-banner-content ul, .main-banner-content p {
+    font-weight: 600;
+}
+
 .main-banner-content .btn-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.main-banner-content .banner-btn {
+.banner-btn {
     margin-top: 30px;
     margin-right: 40px;
     padding: 15px 30px;
@@ -322,7 +328,7 @@ nav .dropdown .dropdown-content ul {
     color: var(--head-color);
 }
 
-.main-banner-content .banner-btn a {
+.banner-btn a {
     text-decoration: none;
     color: #FFFFFF;
     font-family: Jost;
@@ -339,6 +345,57 @@ nav .dropdown .dropdown-content ul {
 .flickity-page-dots {
     bottom: 0 !important;
     display: none;
+}
+
+.easy-invest-section {
+    margin-top: 10%;
+}
+
+.easy-investment {
+    width: 90%;
+    margin: auto;
+}
+
+.easy-investment-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.easy-investment-content .easy-investment-text {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.easy-investment-text i {
+    margin-right: 10px;
+    color: #055C2D;
+    font-size: 24px;
+}
+
+.easy-investment-content .easy-investment-image, .easy-investment-image img {
+    width: 100%;
+}
+
+.easy-investment-content p:first-child {
+    color: var(--head-alt-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.easy-investment-content h1 {
+    margin-bottom: 20px;
+    font-size: var(--medium-banner-font-size);
+}
+
+.easy-investment-content ul {
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style-type: none;
 }
 
 .about-area {
@@ -404,7 +461,6 @@ nav .dropdown .dropdown-content ul {
 .loan-section h1 {
     font-weight: 500;
     text-align: center;
-    margin-bottom: 40px;
     font-size: 36px;
 }
 
@@ -421,7 +477,6 @@ nav .dropdown .dropdown-content ul {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    margin-top: 60px;
     padding-top: 60px;
     background-color: white;
     gap: 20px;
@@ -546,7 +601,11 @@ nav .dropdown .dropdown-content ul {
     margin: auto;
     margin-bottom: 40px;
     text-align: left;
-    width: 80%;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
 }
 
 .credit-content p {
@@ -567,10 +626,12 @@ nav .dropdown .dropdown-content ul {
     align-items: center;
     justify-content: center;
     margin: auto;
+    width: 100%;
 }
 
 .credit-social img {
     width: 100%;
+    max-width: 150px;
 }
 
 .create-account .title {
@@ -599,7 +660,7 @@ nav .dropdown .dropdown-content ul {
 }
 
 .loans {
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .loans .loan-text {
@@ -908,7 +969,7 @@ nav .dropdown .dropdown-content ul {
 }
 
 .register {
-    transform: translateY(150px);
+    transform: translateY(150px) !important;
 }
 
 .register .create-account {
@@ -1041,6 +1102,7 @@ footer .container .row .footer-col ul li a{
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+    color: var(--head-color);
 }
   
 footer .container .row .footer-col ul li a.footer-links:hover{
@@ -1130,7 +1192,15 @@ footer .container .row .footer-col .social-links a:hover{
 
 @media (min-width: 1024px) {
     .main-banner-content {
-        margin-left: 15%;
+        margin: auto;
+    }
+
+    .main-banner-content p:first-child {
+        font-size: var(--small-banner-font-size);
+    }
+
+    .main-banner-content h1 {
+        font-size: var(--big-banner-font-size);
     }
 
     .loan-section .card-row {
@@ -1219,8 +1289,24 @@ footer .container .row .footer-col .social-links a:hover{
         padding-left: 0;
     }
 
+    nav .nav-links ul .account-btn {
+        width: 180px;
+    }
+
+    .easy-investment-content {
+        flex-wrap: wrap;
+    }
+
+    .easy-investment-content .easy-investment-image:first-of-type {
+        display: none;
+    }
+
     .solutions-image {
         display: none;
+    }
+
+    .credit-content {
+        width: 70%;
     }
 
     .footer {
@@ -1250,13 +1336,42 @@ footer .container .row .footer-col .social-links a:hover{
         margin-top: 2rem;
     }
 
-    .main-banner-content ul > div  {
+    .check-form .tabs .tab-item {
+        padding: 0.7rem 1rem;
+    }
+
+    .main-banner-content ul > div, .easy-investment-text div  {
         align-items: unset;
+    }
+    
+    .easy-investment {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .easy-investment-content, .easy-investment-content .easy-investment-text {
+        padding: 0;
+    }
+
+    .main-banner-content h1 {
+        font-size: var(--small-banner-font-size);
+    }
+
+    .card-row {
+        margin-top: 0;
     }
 
     .register .create-account {
         padding-top: 40px;
         padding-bottom: 10px;
+    }
+
+    .credit-social {
+        flex-wrap: wrap;
+    }
+
+    .credit-content {
+        width: 100%;
     }
 
     .clients-item {
@@ -1275,6 +1390,10 @@ footer .container .row .footer-col .social-links a:hover{
 
     .solutions-container .solutions-text h1 {
         font-size: 30px;
+    }
+
+    .loans {
+        margin-top: 30%;
     }
 
     .loan-section .single-box {

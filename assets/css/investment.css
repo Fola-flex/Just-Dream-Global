@@ -35,6 +35,10 @@
     justify-content: center;
 }
 
+.investment-wrapper img {
+    width: 60%;
+}
+
 .investment-title {
     width: 100%;
     max-width: 500px;

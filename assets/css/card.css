@@ -1,0 +1,79 @@
+.card-header {
+    background-color: var(--background-color);
+}
+
+.card-banner {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.card-banner > div {
+    display: flex;
+    align-items: center;
+}
+
+.card-banner > div i {
+    padding: 0px 8px;
+    color: var(--hover-color);
+}
+
+.card-banner h1 {
+    font-size: 42px;
+}
+
+.just-dream-card  {
+    margin-top: 10%;
+}
+
+.just-dream-card .card-container {
+    width: 80%;
+    margin: auto;
+}
+
+.just-dream-card .card-container img {
+    width: 100%;
+}
+
+.just-dream-card .coming-soon {
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 40px;
+    background-color: var(--hover-color);
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.just-dream-card .coming-soon h1 {
+    font-size: 4.5rem;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.just-dream-card .coming-soon > div {
+    width: 80%;
+}
+
+.just-dream-card .coming-soon > div img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .just-dream-card .coming-soon {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+    .just-dream-card .coming-soon {
+        width: 98%;
+    }
+    .just-dream-card .coming-soon h1 {
+        font-size: 2rem;
+    }
+}

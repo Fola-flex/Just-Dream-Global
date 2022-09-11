@@ -1,4 +1,8 @@
 let navbtn = document.getElementById('bars');
+let year = document.getElementsByClassName('year')[0];
+let display_year = new Date()
+
+year.innerHTML = display_year.getFullYear();
 
 navbtn.addEventListener('click', () => {
     shownav(); 
@@ -19,7 +23,9 @@ function shownav() {
     }
 };
 
-/*section animatioin */
+
+
+/*section animation */
 const fades = document.querySelectorAll('.reveal');
 
 const appearOption = {

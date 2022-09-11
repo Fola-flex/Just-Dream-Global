@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/just-dream-global.png">
+    <link rel="icon" type="image/png" href="assets/images/just-dreams-icon.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/business.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
     <title>Just Dream Global</title>
 </head>
 <body>
@@ -34,18 +36,18 @@
                                     <div class="sub-dropdown-content">
                                         <ul>
                                             <li><a href="business_loan.html">Business Loans</a></li>
-                                            <li><a href="personal_loan.html">Personal Loan</a></li>
+                                            <li><a href="personal_loan.html">Personal Loans</a></li>
                                         </ul> 
                                     </div> 
                                 </div>
                                 <li><a href="invest.html">Investment</a></li>
-                                <li><a href="">Card</a></li>
+                                <li><a href="card.html">Card</a></li>
                                 <li><a href="http://just-credit.com/">Just-Credit</a></li>
                             </ul>
                         </div> 
                     </div>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li class="account-btn">
                         <a href="register.html" class="default-btn">Create Account</a>
                     </li>
@@ -71,29 +73,29 @@
                     <p>Fill the form and our team will get back to you within 24hr</p>
                 </div>
                     <div class="application-form">
-                    <form>
+                    <form id="form" name="contact_form" action="#">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input name="name" type="text" placeholder="What's your name" required>
+                            <input name="name" type="text" id="name" placeholder="What's your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input name="email" type="email" placeholder="What's your email" required>
+                            <input name="email" type="email" id="email" placeholder="What's your email">
                         </div>
                         <div class="form-group">
                             <label for="telephone">Phone</label>
-                            <input name="telephone" type="tel" placeholder="0804 090 6505" required>
+                            <input name="telephone" type="tel" id="phone" placeholder="08040906505">
                         </div>
                         <div class="form-group">
                             <label for="service">Service Interested in</label>
-                            <input name="service" type="text" placeholder="Ex. Business Loan" required>
+                            <input name="service" type="text" id="service" placeholder="Ex. Business Loan" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea name="message" type="text" placeholder="I would like to get in touch with you" required></textarea>
+                            <textarea name="message" type="text" id="message" placeholder="I would like to get in touch with you" required></textarea>
                         </div>
                         <button type="submit" name="submit" class="personal-loan-btn">
-                            <a href="" class="default-btn">Send Message</a>
+                            <a class="default-btn">Send Message</a>
                         </button>
                     </form>
                 </div>
@@ -107,19 +109,19 @@
                 <div class="help-cards">
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="" alt="checking">
+                            <img src="assets/icons/a7.png" alt="telephone icon">
                         </div>
                         <div>
                             <h3>Call Center </h3>
                             <p>We'd love to hear from you <a href="tel:+2348179355362">+2348179355362</a></p>
                             <button type="submit" name="submit" class="personal-loan-btn">
-                                <a href="" class="default-btn">Send Message</a>
+                                <a href="contact.html" class="default-btn">Send Message</a>
                             </button>
                         </div>
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/experience.png" alt="support icon">
                         </div>
                         <div>
                             <h3>Direct Email </h3>
@@ -131,7 +133,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/innovation_icon.png" alt="social-icon">
                         </div>
                         <div>
                             <h3>We are social</h3>
@@ -146,7 +148,7 @@
                     </div>
                     <div class="card-wrapper">
                         <div class="thumb">
-                            <img src="assets/images/icon/savings.png" alt="checking">
+                            <img src="assets/icons/qualified.png" alt="location icon">
                         </div>
                         <div>
                             <h3>Location</h3>
@@ -164,7 +166,7 @@
             <div class="create-account">
                 <div class="title">
                     <p>If you got up to this place, then you've just one step left. </p>
-                    <h1>Just few minutes to register </h1>
+                    <h1>Just few minutes to register</h1>
                 </div>
                 <div class="account-buttons">
                     <div class="about-btn">
@@ -188,25 +190,25 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a class="footer-links" href="index.html">Home</a></li>
-                            <li><a class="footer-links" href="about.html">About</a></li>
-                            <li><a class="footer-links" href="">Terms and Conditions</a></li>
-                            <li><a class="footer-links" href="">Privacy policy</a></li>
+                            <li><a class="footer-links" href="about.html">About Us</a></li>
+                            <li><a class="footer-links" href="terms.html">Terms and Conditions</a></li>
+                            <li><a class="footer-links" href="privacy.html">Privacy policy</a></li>
+                            <li><a class="footer-links" href="legal.html">Legal</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Useful Links</h4>
+                        <h4>Product</h4>
                         <ul>
-                            <li><a class="footer-links" href="">Products</a></li>
+                            <li><a class="footer-links" href="invest.html">Investment</a></li>
                             <li><a class="footer-links" href="business_loan.html">Business Loan</a></li>
                             <li><a class="footer-links" href="personal_loan.html">Personal Loan</a></li>
-                            <li><a class="footer-links" href="">Affiliate Program</a></li>
-                            <li><a class="footer-links" href="">Blog</a></li>
+                            <li><a class="footer-links" href="blog.html">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Support</h4>
                         <ul>
-                            <li><a class="footer-links" href="contact.html">Contact us</a></li>
+                            <li><a class="footer-links" href="contact.html">Contact Us</a></li>
                             <li><a class="footer-links" href="faq.html">FAQ</a></li>
                         </ul>
                     </div>
@@ -222,7 +224,7 @@
                 <div class="last">
                     <div class="col-md-12">
                         <p class="copyright">
-                            Just-Dream Global 2022. All rights reserved.
+                            Just-Dream Global <span class="year"></span>. All rights reserved.
                         </p>
                     </div>
                 </div>
@@ -230,5 +232,6 @@
         </div>
     </footer>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>

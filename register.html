@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/just-dream-global.png">
+    <link rel="icon" type="image/png" href="assets/images/just-dreams-icon.png">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
     <title>Just Dream Global</title>
 </head>
 <body>
@@ -44,7 +46,7 @@
                         </div> 
                     </div>
                     <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li class="account-btn">
                         <a href="register.html" class="default-btn">Create Account</a>
                     </li>
@@ -70,40 +72,47 @@
                     <p>Create an account in no time.</p>
                 </div>
                 <div class="register-form">
-                    <form>
+                    <form name="register_form" id="form" action="#">
                         <div class="form-group">
                             <label for="firstname">First Name</label>
-                            <input name="firstname" type="text" placeholder="First name" required>
+                            <input name="firstname" id="firstname" type="text" placeholder="First name">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="lastname">Last Name</label>
-                            <input name="lastname" type="text" placeholder="Last name" required>
+                            <input name="lastname" id="lastname" type="text" placeholder="Last name">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="DOB">Date of Birth</label>
-                            <input name="DOB" type="date" placeholder="Date of birth" required>
+                            <input name="DOB" id="date-of-birth" type="date" placeholder="Date of birth">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group" id="display_mail">
                             <div>
                                 <label for="email">Email</label>
-                                <small><a onclick="changeToPhone()">Use Phone number instead?</a></small>
+                                <span><a onclick="changeToPhone()">Use Phone number instead?</a></span>
                             </div>
-                            <input name="email" type="email" placeholder="Your email" required>
+                            <input name="email" id="email" type="email" placeholder="Your email" autocomplete="email">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group" id="display_phone" style="display: none;">
                             <div>
                                 <label for="phone">Phone</label>
-                                <small><a onclick="changeToMail()">Use Email instead?</a></small>
+                                <span><a onclick="changeToMail()">Use Email instead?</a></span>
                             </div>
-                            <input name="phone" type="tel" placeholder="Your Phone Number" required>
+                            <input name="phone" id="phone" type="tel" placeholder="Your Phone Number">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input name="password" type="password" placeholder="Password" required>
+                            <input name="password" id="password" type="password" placeholder="Password" autocomplete="new-password">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="password_two">Confirm Password</label>
-                            <input name="password_two" type="password" placeholder="Confirm Password" required>
+                            <input name="password_two" id="password_two" type="password" placeholder="Confirm Password" autocomplete="new-password">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="country">Country of Residence</label>
@@ -114,17 +123,18 @@
                         </div>
                         <div class="form-group" id="display_option" style="display: none;">
                             <label for="other_country">Other Country</label>
-                            <input name="other_country" type="text" placeholder="Country" required>
+                            <input name="other_country" id="other_country" type="text" placeholder="Country">
+                            <small>Error message</small>
                         </div>
                         <div class="form-group">
                             <label for="register_for">Register For</label>
                             <select name="register_for" required>
-                                <option value="Loan">Loan</option>
-                                <option value="Investment">Investment</option>
+                                <option id="loan" value="Loan">Loan</option>
+                                <option id="investment" value="Investment">Investment</option>
                             </select>
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" name="privacy_policy" class="custom-control-input" id="checkme2" required>
+                            <input type="checkbox" name="privacy_policy" class="custom-control-input" id="checkme" required>
                             <label class="custom-control-label" for="checkme2">I accept the <a href="" class="btn-link">Privacy policies</a></label>
                         </div>
                         <div class="form-check">
@@ -152,25 +162,25 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a class="footer-links" href="index.html">Home</a></li>
-                            <li><a class="footer-links" href="about.html">About</a></li>
-                            <li><a class="footer-links" href="">Terms and Conditions</a></li>
-                            <li><a class="footer-links" href="">Privacy policy</a></li>
+                            <li><a class="footer-links" href="about.html">About Us</a></li>
+                            <li><a class="footer-links" href="terms.html">Terms and Conditions</a></li>
+                            <li><a class="footer-links" href="privacy.html">Privacy policy</a></li>
+                            <li><a class="footer-links" href="legal.html">Legal</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Useful Links</h4>
+                        <h4>Product</h4>
                         <ul>
-                            <li><a class="footer-links" href="">Products</a></li>
+                            <li><a class="footer-links" href="invest.html">Investment</a></li>
                             <li><a class="footer-links" href="business_loan.html">Business Loan</a></li>
                             <li><a class="footer-links" href="personal_loan.html">Personal Loan</a></li>
-                            <li><a class="footer-links" href="">Affiliate Program</a></li>
-                            <li><a class="footer-links" href="">Blog</a></li>
+                            <li><a class="footer-links" href="blog.html">Blog</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Support</h4>
                         <ul>
-                            <li><a class="footer-links" href="contact.html">Contact us</a></li>
+                            <li><a class="footer-links" href="contact.html">Contact Us</a></li>
                             <li><a class="footer-links" href="faq.html">FAQ</a></li>
                         </ul>
                     </div>
@@ -186,7 +196,7 @@
                 <div class="last">
                     <div class="col-md-12">
                         <p class="copyright">
-                            Just-Dream Global 2022. All rights reserved.
+                            Just-Dream Global <span class="year"></span>. All rights reserved.
                         </p>
                     </div>
                 </div>

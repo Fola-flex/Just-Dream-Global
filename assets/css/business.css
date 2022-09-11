@@ -416,8 +416,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .value-cards .card-wrapper {
-    width: 220px;
+    width: 90%;
+    max-width: 300px;
     height: 100%;
+    padding: 30px 20px;
+    background: var(--body-color);
+    box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
+    border-radius: 20px;
 }
 
 .value-cards .card-wrapper h3 {
