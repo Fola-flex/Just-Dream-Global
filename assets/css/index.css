@@ -128,10 +128,19 @@ nav .nav-links ul .account-btn {
 
 nav .nav-links .account-btn a {
     color: #FFFFFF;
-    z-index: 100;
+    z-index: 1000;
 }
 
+nav .nav-links .account-btn:hover {
+    background-color: #FFFFFF;
+    font-weight: 500;
+    border: 1px solid var(--hover-color);
+}
 
+nav .nav-links .account-btn:hover a {
+    color: var(--hover-color);
+    z-index: 1000;
+}
 
 ul.sidenav { 
     transform: translateX(-200%);
