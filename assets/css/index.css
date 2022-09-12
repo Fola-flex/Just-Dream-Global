@@ -132,14 +132,11 @@ nav .nav-links .account-btn a {
 
 nav .nav-links .account-btn:active {
     background-color: #FFFFFF;
-    font-weight: 500;
     border: 1px solid var(--hover-color);
 }
 
 nav .nav-links .account-btn:active a {
     color: var(--hover-color);
-    font-weight: 500;
-    z-index: 1000;
 }
 
 ul.sidenav { 
