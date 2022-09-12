@@ -35,7 +35,7 @@ const appearOption = {
 const appearOnScroll = new IntersectionObserver(function(entries) 
 {entries.forEach(entry => {
     if (entry.isIntersecting) {
-        entry.target.classList.add('active_');
+        entry.target.classList.add('active');
     }
 })}, appearOption)
 
@@ -66,11 +66,11 @@ function showTopBtn() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 ) {
         topBtn.style.visibility = 'visible';
         topBtn.style.opacity = '1';
-        topBtn.classList.add('show_btn')
+        topBtn.classList.add('active')
     } else {
         topBtn.style.visibility = 'none';
         topBtn.style.opacity = '0'
-        topBtn.classList.remove('show_btn')
+        topBtn.classList.remove('active')
     }
 }
 

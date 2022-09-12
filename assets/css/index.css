@@ -1095,6 +1095,7 @@ footer .container .row ul{
 
 footer .container .row .footer-col ul li:not(:last-child){
     margin-bottom: 20px;
+  
 }
   
 footer .container .row .footer-col ul li a{
@@ -1134,7 +1135,7 @@ footer .container .row .footer-col .social-links a:hover{
     transform: translateY(20px);
 }
 
-.scrollToTop.show_btn {
+.scrollToTop.active {
     bottom: 30px;
     transform: translateY(0%);
     color: var(--body-color);
@@ -1158,7 +1159,7 @@ footer .container .row .footer-col .social-links a:hover{
     transform: translateY(100%);
 }
 
-.reveal.active_ {
+.reveal.active {
     opacity: 1;
     transform: translateX(0);
 }
