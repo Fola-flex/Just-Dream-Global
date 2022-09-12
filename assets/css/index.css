@@ -1324,6 +1324,7 @@ footer .container .row .footer-col .social-links a:hover{
         padding: 15px 20px;
         text-align: center;
         display: block;
+        z-index: 1000;
     }
 
     .easy-investment-content {
