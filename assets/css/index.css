@@ -1292,6 +1292,8 @@ footer .container .row .footer-col .social-links a:hover{
     nav .nav-links ul .account-btn {
         width: 180px;
         padding: 15px 20px;
+        text-align: center;
+        z-index: 10;
     }
 
     .easy-investment-content {

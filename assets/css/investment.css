@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-.investment-wrapper img {
+.investment-wrapper .close {
     width: 60%;
 }
 
@@ -132,7 +132,7 @@
 }
 
 @media (max-width: 768px) {
-    .investment-wrapper img {
+    .investment-wrapper .close {
         display: none;
     }
 }
