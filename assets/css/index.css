@@ -122,6 +122,8 @@ nav .nav-links ul .account-btn {
     outline: none;
     border: none;
     border-radius: 50px;
+    position: relative;
+    z-index: 10000;
 }
 
 nav .nav-links ul .account-btn a {
@@ -1421,8 +1423,6 @@ footer .container .row .footer-col .social-links a:hover{
     .solutions-container .solutions-text h1 {
         font-size: 30px;
     }
-
-    .account-btn
 
     .loans {
         margin-top: 30%;
