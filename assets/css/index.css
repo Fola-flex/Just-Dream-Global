@@ -127,6 +127,7 @@ nav .nav-links ul .account-btn {
 nav .nav-links ul .account-btn a {
     color: #FFFFFF;
     font-weight: 500;
+    z-index: 100000;
 }
 
 nav .nav-links ul .account-btn:hover {
