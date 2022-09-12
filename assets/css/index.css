@@ -1322,6 +1322,7 @@ footer .container .row .footer-col .social-links a:hover{
         width: 180px;
         padding: 15px 20px;
         text-align: center;
+        display: block;
     }
 
     .easy-investment-content {
@@ -1355,10 +1356,6 @@ footer .container .row .footer-col .social-links a:hover{
 }
   
 @media(max-width: 460px){
-    header {
-        height: 80px;
-    }
-
     .about-btn a {
         padding: 8px 20px;
     }
