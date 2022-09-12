@@ -115,39 +115,30 @@ nav .nav-links ul a {
     font-weight: 600;
 }
 
+nav .nav-links ul a:hover {
+    color: var(--hover-color);
+}
+
 nav .nav-links ul .account-btn {
     padding: 15px 35px;
     background-color: var(--hover-color);
     color: var(--body-color);
-    outline: none;
-    border: none;
     border-radius: 50px;
-    position: relative;
-    z-index: 10000;
 }
 
-nav .nav-links ul .account-btn a {
+nav .nav-links .account-btn a {
     color: #FFFFFF;
-    font-weight: 500;
-    opacity: 1;
-    z-index: 1000;
 }
 
 nav .nav-links ul .account-btn:hover, nav .nav-links ul .account-btn:active {
     background-color: #FFFFFF;
     font-weight: 500;
     border: 1px solid var(--hover-color);
-    z-index: 1000;
 }
 
 nav .nav-links ul .account-btn:hover a {
     color: var(--hover-color);
     font-weight: 500;
-    z-index: 100000;
-}
-
-nav .nav-links ul a:hover {
-    color: var(--hover-color);
 }
 
 ul.sidenav { 
@@ -1325,8 +1316,6 @@ footer .container .row .footer-col .social-links a:hover{
         width: 180px;
         padding: 15px 20px;
         text-align: center;
-        display: block;
-        z-index: 1000;
     }
 
     .easy-investment-content {
