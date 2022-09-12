@@ -66,11 +66,11 @@ function showTopBtn() {
     if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 ) {
         topBtn.style.visibility = 'visible';
         topBtn.style.opacity = '1';
-        topBtn.classList.add('active')
+        topBtn.classList.add('show_btn')
     } else {
         topBtn.style.visibility = 'none';
         topBtn.style.opacity = '0'
-        topBtn.classList.remove('active')
+        topBtn.classList.remove('show_btn')
     }
 }
 
