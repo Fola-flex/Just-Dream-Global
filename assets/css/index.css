@@ -130,15 +130,6 @@ nav .nav-links .account-btn a {
     color: #FFFFFF;
 }
 
-nav .nav-links .account-btn:active {
-    background-color: #FFFFFF;
-    border: 1px solid var(--hover-color);
-}
-
-nav .nav-links .account-btn:active a {
-    color: var(--hover-color);
-}
-
 ul.sidenav { 
     transform: translateX(-200%);
 }
