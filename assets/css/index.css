@@ -128,18 +128,6 @@ nav .nav-links ul .account-btn {
 
 nav .nav-links .account-btn a {
     color: #FFFFFF;
-    z-index: 1000;
-}
-
-nav .nav-links .account-btn:hover {
-    background-color: #FFFFFF;
-    font-weight: 500;
-    border: 1px solid var(--hover-color);
-}
-
-nav .nav-links .account-btn:hover a {
-    color: var(--hover-color);
-    z-index: 1000;
 }
 
 ul.sidenav { 
@@ -1268,17 +1256,6 @@ footer .container .row .footer-col .social-links a:hover{
         padding-bottom: 20px;
         box-shadow: 0px 20px 24px rgb(47 65 129 / 10%);
         z-index: 10000;
-    }
-
-    nav .nav-links .account-btn:active {
-        background-color: #FFFFFF;
-        font-weight: 500;
-        border: 1px solid var(--hover-color);
-    }
-    
-    nav .nav-links .account-btn:active a {
-        color: var(--hover-color);
-        z-index: 1000;
     }
     
     nav .nav-links ul li {
