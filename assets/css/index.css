@@ -139,6 +139,7 @@ nav .nav-links ul .account-btn:hover {
 nav .nav-links ul .account-btn:hover a {
     color: var(--hover-color);
     font-weight: 500;
+    z-index: 100000;
 }
 
 nav .nav-links ul a:hover {
@@ -679,7 +680,7 @@ nav .dropdown .dropdown-content ul {
 .loans .loan-btn {
     margin-top: 30px;
     margin-right: 40px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     background-color: var(--hover-color);
     color: var(--body-color);
     outline: none;

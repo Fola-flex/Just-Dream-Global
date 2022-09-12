@@ -91,6 +91,10 @@
     padding: 15px;
 }
 
+.application-form .form-group input:focus, .application-form .form-group textarea:focus {
+    border: 1px solid var(--hover-color);
+}
+
 .form-group textarea::placeholder {
     font-family: Jost;
 }
