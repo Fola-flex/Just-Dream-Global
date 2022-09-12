@@ -22,8 +22,6 @@ function shownav() {
     }
 };
 
-
-
 /*section animation */
 const fades = document.querySelectorAll('.reveal');
 

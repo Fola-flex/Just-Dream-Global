@@ -131,7 +131,7 @@ nav .nav-links ul .account-btn a {
     z-index: 1000;
 }
 
-nav .nav-links ul .account-btn:hover {
+nav .nav-links ul .account-btn:hover, nav .nav-links ul .account-btn:active {
     background-color: #FFFFFF;
     font-weight: 500;
     border: 1px solid var(--hover-color);
@@ -1322,7 +1322,6 @@ footer .container .row .footer-col .social-links a:hover{
         width: 180px;
         padding: 15px 20px;
         text-align: center;
-        z-index: 1000;
     }
 
     .easy-investment-content {
