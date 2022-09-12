@@ -35,7 +35,7 @@ const appearOption = {
 const appearOnScroll = new IntersectionObserver(function(entries) 
 {entries.forEach(entry => {
     if (entry.isIntersecting) {
-        entry.target.classList.add('active');
+        entry.target.classList.add('active_');
     }
 })}, appearOption)
 

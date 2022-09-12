@@ -1159,7 +1159,7 @@ footer .container .row .footer-col .social-links a:hover{
     transform: translateY(100%);
 }
 
-.reveal.active {
+.reveal.active_ {
     opacity: 1;
     transform: translateX(0);
 }
