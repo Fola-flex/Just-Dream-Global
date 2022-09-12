@@ -19,7 +19,6 @@ function shownav() {
     } else {
         navbtn.innerHTML = '&#9776;';
         navbtn.style.fontSize = '25px';
-        
     }
 };
 
