@@ -124,10 +124,23 @@ nav .nav-links ul .account-btn {
     background-color: var(--hover-color);
     color: var(--body-color);
     border-radius: 50px;
+    outline: 0;
+    border: 0;
+    font-family: Jost;
 }
 
 nav .nav-links .account-btn a {
     color: #FFFFFF;
+}
+
+nav .nav-links ul .account-btn:hover {
+    background-color: var(--body-color);
+    border: 1px solid var(--hover-color);
+    color: var(--hover-color);
+}
+
+nav .nav-links ul .account-btn:hover a {
+    color: var(--hover-color);
 }
 
 ul.sidenav { 
