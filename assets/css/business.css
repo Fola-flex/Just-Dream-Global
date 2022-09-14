@@ -383,6 +383,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     transition: 0.3s;
     border-radius: 50px;
     text-decoration: none;
+    font-family: Jost;
 }
 
 .cmn-btn a  {
