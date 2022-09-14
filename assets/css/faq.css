@@ -20,8 +20,8 @@
     color: var(--hover-color);
 }
 
-.faq-banner h1, .faq-title h1 {
-    font-size: 42px;
+.faq-banner h1 {
+    font-size: var(--big-banner-font-size);
 }
 
 #faq_page {
@@ -153,6 +153,10 @@
 }
 
 @media (max-width: 1024px) {
+    .faq-banner h1 {
+        font-size: var(--small-banner-font-size);
+    }
+
     .help-sec {
         padding: 70px 40px;
     }

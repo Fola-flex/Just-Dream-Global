@@ -265,7 +265,21 @@ nav .dropdown .dropdown-content ul {
 }
 
 .main-banner-content {
-    max-width: 635px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-banner-content .banner-text {
+    width: 100%;
+}
+
+.main-banner-content .banner-image {
+    width: 100%;
+}
+
+.main-banner-content .banner-image img {
+    width: 80%;
 }
 
 .main-banner-content h1 {
@@ -1159,24 +1173,11 @@ footer .container .row .footer-col .social-links a:hover{
 }
 
 @media (min-width: 1280px) {
-    .banner {
-        text-align: center;
-    }
-
-    .main-banner-content .btn-container {
-        justify-content: center;
-    }
-
     .main-banner-content ul {
         width: 350px;
-        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .main-banner-content {
-        max-width: 100%;
     }
 
     .main-banner-content ul .list-flex  {

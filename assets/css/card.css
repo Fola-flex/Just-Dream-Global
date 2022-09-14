@@ -19,7 +19,7 @@
 }
 
 .card-banner h1 {
-    font-size: 42px;
+    font-size: var(--big-banner-font-size);
 }
 
 .just-dream-card  {
@@ -61,6 +61,12 @@
 
 .just-dream-card .coming-soon > div img {
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .card-banner h1 {
+        font-size: var(--small-banner-font-size);
+    }
 }
 
 @media (max-width: 768px) {

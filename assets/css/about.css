@@ -3,23 +3,34 @@
 }
 
 .about-banner {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.about-banner > div {
+.about-banner .banner-text div {
     display: flex;
     align-items: center;
 }
 
-.about-banner > div i {
+.about-banner .banner-text div i {
     padding: 0px 8px;
     color: var(--hover-color);
 }
 
+.about-banner .banner-image {
+    width: 60%;
+}
+
+.about-banner .banner-image img {
+    width: 100%;
+}
+
 .about-banner h1, .about-title h1 {
-    font-size: 42px;
+    font-size: var(--big-banner-font-size);
 }
 
 .lending-area {
@@ -59,7 +70,7 @@
     text-align: center;
     padding: 20px;
     width: 150px;
-    height: 100%;
+    height: auto;
     box-shadow: 0px 12px 24px rgb(47 65 129 / 10%);
     border-radius: 10px;
 }
@@ -182,7 +193,12 @@
     margin-bottom: 10px;
 }
 
+
 @media (max-width: 1024px) {
+    .about-banner h1, .about-title h1 {
+        font-size: var(--small-banner-font-size);
+    }
+    
     .about-content {
         flex-direction: column;
         width: 100%;
@@ -196,6 +212,14 @@
 }
 
 @media (max-width: 768px) {
+    .about-banner {
+        width: 80%;
+    }
+
+    .about-banner .banner-image {
+        display: none;
+    }
+
     .value-title {
         width: 80%;
     }

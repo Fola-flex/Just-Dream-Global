@@ -157,6 +157,12 @@
     display: block;
 }
 
+@media (min-width: 1024px) {
+    .register-banner h1 {
+        font-size: 76px;
+    }
+}
+
 @media (max-width: 460px) {
     .register-form .form-group {
         width: 100%;

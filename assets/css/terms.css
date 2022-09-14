@@ -1,0 +1,86 @@
+.privacy {
+    margin-top: 10%;
+    padding: 0 20%;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 41px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.privacy > div {
+    margin: 30px 0px;
+}
+
+.privacy ul, .use-info ul, .disclosure ul {
+    margin-left: 40px;
+}
+
+.privacy .info-collection ul {
+    list-style-type: square;
+}
+
+.privacy .info-given ul {
+    list-style-type: disc;
+}
+
+.light {
+    background-color: var(--background-color);
+}
+
+.use-info, .disclosure {
+    margin: 7% 0;
+    padding: 5% 20%;
+}
+
+.disclosure {
+    background: var(--hover-color);
+    color: white;
+}
+
+.disclosure .disclosure-wrapper > div  {
+    margin: 50px 0;
+}
+
+.disclosure a {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .privacy {
+        padding: 0 10%;
+    }
+
+    .use-info, .disclosure {
+        padding: 5% 10%;
+    }
+}
+
+@media (max-width: 460px) {
+    .privacy {
+        padding: 0 5%;
+    }
+
+    .use-info, .disclosure {
+        padding: 5% 5%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}

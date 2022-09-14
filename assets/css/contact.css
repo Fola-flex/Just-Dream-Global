@@ -3,23 +3,34 @@
 }
 
 .contact-banner {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contact-banner h1   {
-    font-size: 42px;
+    font-size: var(--big-banner-font-size);
 }
 
-.contact-banner > div {
+.contact-banner .banner-text > div {
     display: flex;
     align-items: center;
 }
 
-.contact-banner > div i {
+.contact-banner .banner-text > div i {
     padding: 0px 8px;
     color: var(--hover-color);
+}
+
+.contact-banner .banner-image {
+    width: 60%;
+}
+
+.contact-banner .banner-image img {
+    width: 100%;
 }
 
 .application-card {
@@ -210,6 +221,22 @@
 .card-wrapper.personal .thumb {
     margin: auto;
     margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .contact-banner h1 {
+        font-size: var(--small-banner-font-size);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-banner {
+        width: 80%
+    }
+
+    .contact-banner .banner-image {
+        display: none;
+    }
 }
 
 @media (max-width: 460px) {
