@@ -393,6 +393,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .values .value-wrapper {
