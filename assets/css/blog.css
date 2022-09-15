@@ -4,6 +4,7 @@
 
 .blog-banner {
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 100px 0px;
     display: flex;
@@ -22,7 +23,7 @@
 }
 
 .blog-banner h1 {
-    font-size: 76px;
+    font-size: var(--big-banner-font-size);
 }
 
 .blog-banner .banner-image {
@@ -31,6 +32,7 @@
 
 .blog-banner .banner-image img {
     width: 100%;
+    border-radius: 40px;
 }
 
 .blog .container .wrapper {
@@ -348,7 +350,7 @@
     }
 
     .blog-banner h1 {
-        font-size: 42px;
+        font-size: var(--medium-banner-font-size);
     }
     
 }

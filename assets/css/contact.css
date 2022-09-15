@@ -5,6 +5,7 @@
 .contact-banner {
     width: 90%;
     margin: auto;
+    max-width: 1200px;
     padding: 100px 20px;
     display: flex;
     align-items: center;
@@ -31,6 +32,7 @@
 
 .contact-banner .banner-image img {
     width: 100%;
+    border-radius: 40px;
 }
 
 .application-card {
@@ -220,7 +222,7 @@
 
 @media (max-width: 1024px) {
     .contact-banner h1 {
-        font-size: var(--small-banner-font-size);
+        font-size: var(--medium-banner-font-size);
     }
 }
 
@@ -235,6 +237,10 @@
 }
 
 @media (max-width: 460px) {
+    .contact-banner h1 {
+        font-size: var(--small-banner-font-size);
+    }
+
     .application-form .form-group {
         width: 100%;
     }

@@ -4,6 +4,7 @@
 
 .business-banner {
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 100px 20px;
     display: flex;
@@ -32,6 +33,7 @@
 
 .business-banner .banner-image img {
     width: 100%;
+    border-radius: 40px;
 }
 
 .business-loans {
@@ -481,7 +483,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 @media screen and (max-width: 1024px) {
     .business-banner h1 {
-        font-size: var(--small-banner-font-size);
+        font-size: var(--medium-banner-font-size);
     }
 }
 

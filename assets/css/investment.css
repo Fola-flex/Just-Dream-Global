@@ -3,12 +3,14 @@
 }
 
 .invest-banner {
-    width: 89%;
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding: 100px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .invest-banner h1   {
@@ -31,6 +33,7 @@
 
 .invest-banner .banner-image img {
     width: 100%;
+    border-radius: 40px;
 }
 
 .investment {
@@ -144,11 +147,15 @@
 
 @media (max-width: 1024px) {
     .invest-banner h1   {
-        font-size: var(--small-banner-font-size);
+        font-size: var(--medium-banner-font-size);
     }
 }
 
 @media (max-width: 768px) {
+    .invest-banner h1   {
+        font-size: var(--small-banner-font-size);
+    }
+
     .investment-wrapper .close {
         display: none;
     }

@@ -1,6 +1,8 @@
 .privacy {
     margin-top: 10%;
-    padding: 0 20%;
+    padding: 8% 20%;
+    background-color: var(--hover-color);
+    color: #FFFFFF;
 }
 
 h1 {
@@ -36,11 +38,11 @@ h3 {
 }
 
 .use-info, .disclosure {
-    margin: 7% 0;
+    margin: 10% 0;
     padding: 5% 20%;
 }
 
-.disclosure {
+.disclosure, .use-info {
     background: var(--hover-color);
     color: white;
 }
@@ -55,17 +57,17 @@ h3 {
 
 @media (max-width: 1024px) {
     .privacy {
-        padding: 0 10%;
+        padding: 10%;
     }
 
     .use-info, .disclosure {
-        padding: 5% 10%;
+        padding: 10%;
     }
 }
 
 @media (max-width: 460px) {
     .privacy {
-        padding: 0 5%;
+        padding: 5%;
     }
 
     .use-info, .disclosure {
