@@ -1,6 +1,18 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const tel = document.getElementById('phone');
+let map_btn = document.getElementById('map_btn');
+let map_container = document.getElementsByClassName('map-area')[0];
+
+map_btn.addEventListener('click', () => {
+    map_container.classList.toggle('show')
+
+    if (map_container.classList.contains('show')) {
+        map_btn.innerHTML = 'Close Map';
+    } else {
+        map_btn.innerHTML = 'View on Map';
+    }
+})
 
 
 

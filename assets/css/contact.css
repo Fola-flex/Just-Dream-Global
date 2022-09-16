@@ -127,10 +127,27 @@
     border: none;
     border-radius: 50px;
     font-family: Jost;
+    max-width: 100%;
+}
+
+.personal-loan-btn a {
+    color: white;
+    text-decoration: none;
+    font-family: Jost;
 }
 
 .values.personal {
     background: none;
+}
+
+.map-area {
+    margin: 5% 0;
+    height: 500px;
+    display: none;
+}
+
+.map-area.show {
+    display: block;
 }
 
 .help .help-wrapper {
@@ -169,6 +186,7 @@
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .help-cards .card-wrapper {
