@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/business.css">
     <link rel="stylesheet" href="assets/css/personal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.10.0/notyf.min.js"></script>
     <title>Just Dream Global</title>
 </head>
 <body>
@@ -310,27 +312,27 @@
                     <form name="personal_loan_form" action="#">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input name="name" type="text" placeholder="What's your name" required>
+                            <input name="name" type="text" id="name" placeholder="What's your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input name="email" type="email" placeholder="What's your email" required>
+                            <input name="email" type="email" id="email" placeholder="What's your email">
                         </div>
                         <div class="form-group">
-                            <label for="telephone">Phone</label>
-                            <input name="telephone" type="tel" placeholder="0804 090 6505" required>
+                            <label for="phone">Phone</label>
+                            <input name="phone" type="tel" id="phone" placeholder="0804 090 6505">
                         </div>
                         <div class="form-group">
                             <label for="state">State</label>
-                            <input name="state" type="text" placeholder="Lagos" required>
+                            <input name="state" type="text" id="state" placeholder="Lagos" required>
                         </div>
                         <div class="form-group">
                             <label for="loan-amt">Loan Amount</label>
-                            <input name="loan-amt" type="number" placeholder="Ex. 200,000" required>
+                            <input name="loan-amt" type="number" id="loan-amt" placeholder="Ex. 200,000">
                         </div>
                         <div class="form-group">
                             <label for="loan-date">Loan Date</label>
-                            <input name="loan-date" type="date" placeholder="Ex. 12 months" required>
+                            <input name="loan-date" type="date" id="date" placeholder="Ex. 12 months" required>
                         </div>
                         <input type="submit" name="submit" class="personal-loan-btn" value="Apply Now">
                     </form>
@@ -406,7 +408,7 @@
         </div>
     </footer>   
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/calculator.js"></script>
 </body>
 </html>

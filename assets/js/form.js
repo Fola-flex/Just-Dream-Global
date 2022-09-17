@@ -1,18 +1,7 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const tel = document.getElementById('phone');
-let map_btn = document.getElementById('map_btn');
-let map_container = document.getElementsByClassName('map-area')[0];
-
-map_btn.addEventListener('click', () => {
-    map_container.classList.toggle('show')
-
-    if (map_container.classList.contains('show')) {
-        map_btn.innerHTML = 'Close Map';
-    } else {
-        map_btn.innerHTML = 'View on Map';
-    }
-})
+const loan_amt = document.getElementById('loan-amt');
 
 const notyf  = new Notyf({
     duration: 6000
@@ -51,9 +40,11 @@ form.addEventListener('submit', (f) => {
 function checkInputs() {
     const emailValue = email.value.trim();
     const telValue = tel.value.trim();
+    const loanValue = loan_amt.value.trim();
 
     let valid1 = false
     let valid2 = false
+    let valid3 = false
 
     let notyf  = new Notyf()
 
@@ -65,7 +56,6 @@ function checkInputs() {
         valid1 = true;
     }
     
-
     if(telValue === '') {
         notyf.error('Phone field cannot be blank');
     } else if( telValue.length < 9) {
@@ -78,7 +68,15 @@ function checkInputs() {
         valid2 = true;
     }
 
-    validify = [valid1, valid2]
+    if(loanValue === '') {
+        notyf.error('Field cannot be blank');
+    } else if ( isNaN(loanValue)) {
+        notyf.error('Enter Valid Loan Amount');
+    } else{
+        valid3 = true;
+    }
+
+    validify = [valid1, valid2, valid3]
 }
 
 function isEmail(email) {

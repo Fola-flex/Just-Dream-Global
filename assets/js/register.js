@@ -65,7 +65,7 @@ function checkInputs() {
     let valid7 = false;
     let valid8 = false;
 
-    let notyf  = new Notyf()
+    const notyf  = new Notyf()
 
     if(firstnameValue === '') {
        setErrorFor(firstname, 'This field cannot be blank');

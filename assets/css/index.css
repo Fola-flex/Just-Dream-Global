@@ -616,6 +616,8 @@ nav .dropdown .dropdown-content ul {
     padding-bottom: 0;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);;
     transform: translateY(100px);
+    width: 700px;
+    max-width: 90%;
 }
 
 .credit-title {
@@ -1455,6 +1457,7 @@ footer .container .row .footer-col .social-links a:hover{
 
     .clients-item {
         padding: 40px 10px;
+        margin: 0;
     }
 
     .clients-item .icon i {

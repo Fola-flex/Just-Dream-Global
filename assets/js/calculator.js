@@ -45,7 +45,4 @@ document.getElementById("input").oninput = function() {
         interest6.classList.add('active', 'show')
         interest1.classList.remove('active', 'show')
         interest3.classList.remove('active', 'show')
-    })
-
-
-    
+    })    

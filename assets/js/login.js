@@ -4,7 +4,7 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const tel = document.getElementById('phone');
 
-let notyf  = new Notyf()
+const notyf  = new Notyf()
 
 form.addEventListener('input', (f) => {
     checkInputs();
