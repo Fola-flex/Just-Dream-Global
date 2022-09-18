@@ -41,6 +41,7 @@ form.addEventListener('submit', (f) => {
             body: JSON.stringify(formData)
         })
         .then(function () {
+            form.reset()
             return notyf.success('Your message has been received')
             })
         }  
